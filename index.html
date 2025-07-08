@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Danylo Konchakivskyi - AI Developer, Research Intern, and Math Enthusiast from Kyiv, Ukraine">
+    <meta name="keywords" content="AI, Machine Learning, Research, Ukraine, Developer, Mathematics">
+    <meta name="author" content="Danylo Konchakivskyi">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Danylo Konchakivskyi - AI Developer & Researcher">
+    <meta property="og:description"
+          content="Explore my portfolio showcasing AI/ML projects, research contributions, and mathematical visualizations">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./assets/images/og-image.jpg">
+
+    <title>Danylo Konchakivskyi - AI Developer & Researcher</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+          rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+</head>
+<body>
+<!-- Loading Screen -->
+<div id="loading-screen">
+    <div class="loader">
+        <div class="mathematical-loader">
+            <div class="equation">Loading...</div>
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="#home">
+                <span class="logo-text">D</span>
+                <span class="logo-subtext">K</span>
+            </a>
+        </div>
+
+        <ul class="nav-menu" id="nav-menu">
+            <li class="nav-item">
+                <a href="#home" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+                <a href="#research" class="nav-link">Research</a>
+            </li>
+            <li class="nav-item">
+                <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a href="#experience" class="nav-link">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+            </li>
+        </ul>
+
+        <div class="nav-hamburger" id="nav-hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <canvas id="graph-network"></canvas>
+            <div class="particles-container" id="particles-js"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="greeting">Hello, I'm</span>
+                    <span class="name">Danylo Konchakivskyi</span>
+                </h1>
+
+                <div class="hero-subtitle">
+                    <span class="typewriter" id="typewriter"></span>
+                </div>
+
+                <p class="hero-description">
+                    AI Developer & Research Intern passionate about mathematics,
+                    machine learning, and creating impactful solutions from Kyiv, Ukraine 🇺🇦
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="icon-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                        <i class="icon-message"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="floating-elements">
+                    <div class="math-equation" data-equation="∇f(x) = 0"></div>
+                    <div class="math-equation" data-equation="∫ f(x)dx"></div>
+                    <div class="math-equation" data-equation="∑ᵢ₌₁ⁿ xᵢ"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-icon"></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Bridging mathematics and technology</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a passionate AI developer and researcher based in Kyiv, Ukraine,
+                        combining mathematics with practical software development to
+                        solve real-world problems.
+                    </p>
+
+                    <p>
+                        Currently pursuing my studies at the NaUKMA(National University of Kyiv-Mohyla Academy)
+                        with a focus on Applied Mathematics, I maintain a
+                        <strong>93.3/100 GPA</strong> while actively contributing to research
+                        at the KSE(Kyiv School of Economics).
+                    </p>
+
+                    <p>
+                        My expertise spans from theoretical mathematics to practical AI applications,
+                        with particular interest in formal concept analysis, machine learning,
+                        and developing solutions that make a real impact on people's lives.
+                    </p>
+
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-number">93.3</span>
+                            <span class="highlight-text">GPA Score</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">1+</span>
+                            <span class="highlight-text">Years Coding</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">10+</span>
+                            <span class="highlight-text">Projects</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-visual">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="assets/images/profile-photo.jpg" alt="Danylo Konchakivskyi">
+                        </div>
+                        <div class="profile-info">
+                            <h3>Danylo Konchakivskyi</h3>
+                            <p>AI Developer & Researcher</p>
+                            <div class="profile-location">
+                                <i class="icon-location"></i>
+                                <span>Kyiv, Ukraine</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">Academic foundation and achievements</p>
+            </div>
+
+            <div class="education-content">
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="icon-graduation"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>National University of Kyiv-Mohyla Academy</h3>
+                        <p class="education-degree">Applied Mathematics & Computer Science</p>
+                        <p class="education-period">2023 - Present</p>
+                        <p class="education-gpa">GPA: 93.3/100</p>
+                    </div>
+                </div>
+
+                <div class="languages-section">
+                    <h3>Languages</h3>
+                    <div class="language-items">
+                        <div class="language-item">
+                            <span class="language-name">Ukrainian</span>
+                            <span class="language-level">Native</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">English</span>
+                            <span class="language-level">C1 Advanced</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">German</span>
+                            <span class="language-level">Beginner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="research section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Research</h2>
+                <p class="section-subtitle">Contributing to academic knowledge</p>
+            </div>
+
+            <div class="research-content">
+                <div class="research-item">
+                    <div class="research-header">
+                        <h3>Formal Concept Analysis Implementation</h3>
+                        <span class="research-period">2024 - Present</span>
+                    </div>
+                    <p class="research-institution">Kyiv School of Economics</p>
+                    <p class="research-description">
+                        Developing comprehensive Python implementations of Formal Concept Analysis. Research in Graph
+                        theory
+                    </p>
+                    <div class="research-technologies">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Mathematical Modeling</span>
+                        <span class="tech-tag">Algorithm Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">Innovative solutions and implementations</p>
+            </div>
+            <div class="projects-grid">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills</h2>
+                <p class="section-subtitle">Technical expertise and capabilities</p>
+            </div>
+
+            <div class="skills-content">
+                <!-- Skills visualization will be implemented -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">Professional journey and achievements</p>
+            </div>
+
+            <div class="experience-timeline">
+                <!-- Timeline items will be implemented -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's collaborate on something amazing</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="icon-location"></i>
+                        <span>Kyiv, Ukraine</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="icon-email"></i>
+                        <span>konchakivskyidanylo@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="icon-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/danylo-konchakivskyi-b59a28365/" target="_blank">LinkedIn
+                            Profile</a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <p>&copy; 2024 Danylo Konchakivskyi. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">
+                    <i class="icon-github"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="icon-linkedin"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="icon-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>
