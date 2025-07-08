@@ -1,0 +1,190 @@
+/* CSS Custom Properties (Variables) */
+:root {
+    /* Color Palette */
+    --primary-dark: #1a1a2e;
+    --primary-blue: #16213e;
+    --accent-blue: #0f3460;
+    --accent-gold: #ffd700;
+    --accent-cyan: #00d4ff;
+    --text-primary: #ffffff;
+    --text-secondary: #b3b3b3;
+    --text-muted: #8a8a8a;
+    --bg-overlay: rgba(26, 26, 46, 0.9);
+    --bg-glass: rgba(255, 255, 255, 0.1);
+    --border-light: rgba(255, 255, 255, 0.2);
+    --shadow-dark: rgba(0, 0, 0, 0.3);
+    --shadow-glow: rgba(0, 212, 255, 0.3);
+
+    /* Typography */
+    --font-heading: 'Orbitron', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-code: 'Fira Code', monospace;
+
+    /* Font Weights */
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-black: 900;
+
+    /* Font Sizes */
+    --fs-xs: 0.75rem;    /* 12px */
+    --fs-sm: 0.875rem;   /* 14px */
+    --fs-base: 1rem;     /* 16px */
+    --fs-lg: 1.125rem;   /* 18px */
+    --fs-xl: 1.25rem;    /* 20px */
+    --fs-2xl: 1.5rem;    /* 24px */
+    --fs-3xl: 1.875rem;  /* 30px */
+    --fs-4xl: 2.25rem;   /* 36px */
+    --fs-5xl: 3rem;      /* 48px */
+    --fs-6xl: 3.75rem;   /* 60px */
+    --fs-7xl: 4.5rem;    /* 72px */
+
+    /* Spacing */
+    --space-xs: 0.5rem;   /* 8px */
+    --space-sm: 0.75rem;  /* 12px */
+    --space-md: 1rem;     /* 16px */
+    --space-lg: 1.5rem;   /* 24px */
+    --space-xl: 2rem;     /* 32px */
+    --space-2xl: 2.5rem;  /* 40px */
+    --space-3xl: 3rem;    /* 48px */
+    --space-4xl: 4rem;    /* 64px */
+    --space-5xl: 5rem;    /* 80px */
+    --space-6xl: 6rem;    /* 96px */
+
+    /* Layout */
+    --container-max-width: 1200px;
+    --container-padding: 1rem;
+    --header-height: 70px;
+    --section-padding: 5rem 0;
+
+    /* Border Radius */
+    --radius-sm: 0.25rem;   /* 4px */
+    --radius-md: 0.5rem;    /* 8px */
+    --radius-lg: 0.75rem;   /* 12px */
+    --radius-xl: 1rem;      /* 16px */
+    --radius-2xl: 1.5rem;   /* 24px */
+    --radius-full: 9999px;
+
+    /* Transitions */
+    --transition-fast: 0.15s ease;
+    --transition-base: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    --transition-bounce: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+    --shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.25);
+    --shadow-glow-sm: 0 0 10px var(--shadow-glow);
+    --shadow-glow-md: 0 0 20px var(--shadow-glow);
+    --shadow-glow-lg: 0 0 30px var(--shadow-glow);
+
+    /* Z-index */
+    --z-dropdown: 1000;
+    --z-sticky: 1020;
+    --z-fixed: 1030;
+    --z-modal-backdrop: 1040;
+    --z-modal: 1050;
+    --z-popover: 1060;
+    --z-tooltip: 1070;
+    --z-toast: 1080;
+
+    /* Breakpoints */
+    --bp-sm: 640px;
+    --bp-md: 768px;
+    --bp-lg: 1024px;
+    --bp-xl: 1280px;
+    --bp-2xl: 1536px;
+
+    /* Animation Durations */
+    --duration-fast: 150ms;
+    --duration-base: 300ms;
+    --duration-slow: 500ms;
+    --duration-slower: 750ms;
+    --duration-slowest: 1000ms;
+
+    /* Animation Easings */
+    --ease-linear: linear;
+    --ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-back: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-blue) 100%);
+    --gradient-accent: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-cyan) 100%);
+    --gradient-gold: linear-gradient(135deg, var(--accent-gold) 0%, #f39c12 100%);
+    --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+
+    /* Mathematical Elements */
+    --math-equation-size: 1.2rem;
+    --math-equation-opacity: 0.7;
+    --math-equation-color: var(--accent-cyan);
+
+    /* Grid */
+    --grid-columns: 12;
+    --grid-gap: 1rem;
+
+    /* Form Elements */
+    --input-height: 3rem;
+    --input-padding: 0.75rem 1rem;
+    --input-border: 1px solid var(--border-light);
+    --input-border-focus: 2px solid var(--accent-cyan);
+    --input-bg: rgba(255, 255, 255, 0.05);
+    --input-bg-focus: rgba(255, 255, 255, 0.1);
+
+    /* Buttons */
+    --btn-height: 3rem;
+    --btn-padding: 0.75rem 1.5rem;
+    --btn-border-radius: var(--radius-lg);
+    --btn-font-weight: var(--fw-medium);
+    --btn-transition: all var(--transition-base);
+
+    /* Cards */
+    --card-padding: 1.5rem;
+    --card-border-radius: var(--radius-xl);
+    --card-bg: var(--bg-glass);
+    --card-border: 1px solid var(--border-light);
+    --card-shadow: var(--shadow-lg);
+
+    /* Navigation */
+    --nav-height: 70px;
+    --nav-bg: rgba(26, 26, 46, 0.95);
+    --nav-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Dark theme adjustments (if needed) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-overlay: rgba(26, 26, 46, 0.95);
+        --text-secondary: #c0c0c0;
+        --text-muted: #909090;
+    }
+}
+
+/* Responsive font sizes */
+@media (max-width: 768px) {
+    :root {
+        --fs-6xl: 3rem;      /* 48px */
+        --fs-5xl: 2.5rem;    /* 40px */
+        --fs-4xl: 2rem;      /* 32px */
+        --fs-3xl: 1.5rem;    /* 24px */
+        --container-padding: 1rem;
+        --section-padding: 3rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --fs-6xl: 2.5rem;    /* 40px */
+        --fs-5xl: 2rem;      /* 32px */
+        --fs-4xl: 1.75rem;   /* 28px */
+        --container-padding: 0.75rem;
+        --section-padding: 2rem 0;
+    }
+}
