@@ -476,6 +476,16 @@ const projectsData = [
         github: "https://github.com/KonchakivskyiDanylo/python-fca-analysis",
         demo: "#",
         featured: false
+    },
+    {
+        id: 4,
+        title: "Volleyball Team Management Platform",
+        description: "Production team management system with automated scheduling, voting workflows, and payment processing for active users.",
+        technologies: ["Python", "Telegram Bot", "MongoDB", "Heroku", "Workflow Automation"],
+        image: "assets/images/volleyball-management.png",
+        github: "https://github.com/KonchakivskyiDanylo/volleyball-tg-bot",
+        demo: "#",
+        featured: true
     }
 
 ];
