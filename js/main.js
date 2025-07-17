@@ -82,6 +82,12 @@ function handleNavLinkClick(e) {
     e.preventDefault();
 
     const targetId = e.target.getAttribute('href');
+
+    if (targetId.endsWith('.html')) {
+        window.location.href = targetId;
+        return;
+    }
+
     const targetSection = document.querySelector(targetId);
 
     if (targetSection) {

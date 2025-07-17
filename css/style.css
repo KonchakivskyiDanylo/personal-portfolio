@@ -49,11 +49,6 @@ body {
     border-radius: var(--radius-full);
 }
 
-.section-subtitle {
-    font-size: var(--fs-lg);
-    color: var(--text-secondary);
-    font-weight: var(--fw-regular);
-}
 
 /* Loading Screen */
 #loading-screen {
@@ -303,7 +298,7 @@ body {
 }
 
 .hero-description {
-    font-size: var(--fs-lg);
+    font-size: var(--fs-xl);
     color: var(--text-secondary);
     line-height: 1.6;
     margin-bottom: var(--space-3xl);
@@ -315,7 +310,6 @@ body {
     gap: var(--space-lg);
     flex-wrap: wrap;
 }
-
 
 
 .scroll-indicator {
@@ -1413,4 +1407,227 @@ body {
 .bot-feature p {
     color: var(--text-secondary);
     line-height: 1.6;
+}
+
+/* About Page Styles */
+.about-page {
+    padding-top: calc(var(--nav-height) + 2rem);
+    min-height: 100vh;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: var(--space-5xl);
+}
+
+.page-header h1 {
+    font-family: var(--font-heading);
+    font-size: var(--fs-4xl);
+    color: var(--text-primary);
+    margin-bottom: var(--space-md);
+}
+
+.page-subtitle {
+    font-size: var(--fs-xl);
+    color: var(--accent-cyan);
+}
+
+.about-content-detailed {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-section {
+    margin-bottom: var(--space-4xl);
+}
+
+.content-section h2 {
+    font-family: var(--font-heading);
+    font-size: var(--fs-2xl);
+    color: var(--text-primary);
+    margin-bottom: var(--space-lg);
+}
+
+.content-section p {
+    font-size: var(--fs-lg);
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-lg);
+}
+
+.highlight-box {
+    background: var(--bg-glass);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-xl);
+    padding: var(--space-xl);
+    margin: var(--space-xl) 0;
+    backdrop-filter: blur(10px);
+}
+
+.highlight-box h3 {
+    color: var(--accent-cyan);
+    margin-bottom: var(--space-md);
+    font-size: var(--fs-xl);
+}
+
+.highlight-box p {
+    margin-bottom: var(--space-md);
+}
+
+.inline-link {
+    color: var(--accent-gold);
+    text-decoration: none;
+    font-weight: var(--fw-medium);
+    transition: color var(--transition-base);
+}
+
+.inline-link:hover {
+    color: var(--accent-cyan);
+}
+
+.chess-challenge {
+    background: var(--bg-glass);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    text-align: center;
+    margin: var(--space-lg) 0;
+}
+
+.chess-challenge p {
+    margin-bottom: var(--space-md);
+}
+
+.chess-icon {
+    font-size: var(--fs-lg);
+}
+
+.cta-section {
+    text-align: center;
+    padding: var(--space-2xl);
+    background: var(--bg-glass);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-xl);
+    backdrop-filter: blur(10px);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: var(--space-lg);
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: var(--space-lg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+}
+/* About Page Hero Section */
+.about-hero {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: var(--space-4xl);
+    align-items: center;
+    margin-bottom: var(--space-5xl);
+}
+
+.about-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--accent-cyan);
+    box-shadow: var(--shadow-glow-md);
+    margin: 0 auto;
+}
+
+.about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-intro {
+    text-align: left;
+}
+
+.about-intro h1 {
+    font-family: var(--font-heading);
+    font-size: var(--fs-4xl);
+    color: var(--text-primary);
+    margin-bottom: var(--space-md);
+}
+
+.about-intro .page-subtitle {
+    font-size: var(--fs-xl);
+    color: var(--accent-cyan);
+    margin-bottom: var(--space-xl);
+}
+
+.personal-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-md);
+    background: var(--bg-glass);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    backdrop-filter: blur(10px);
+}
+
+.info-label {
+    font-size: var(--fs-sm);
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: var(--space-xs);
+}
+
+.info-value {
+    font-size: var(--fs-base);
+    color: var(--accent-gold);
+    font-weight: var(--fw-medium);
+}
+
+/* Responsive for About Hero */
+@media (max-width: 768px) {
+    .about-hero {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+        text-align: center;
+    }
+
+    .about-intro {
+        text-align: center;
+    }
+
+    .personal-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-photo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-intro h1 {
+        font-size: var(--fs-3xl);
+    }
 }
