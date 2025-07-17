@@ -306,8 +306,6 @@ function initializeGraphNetwork() {
 
 // Scroll effects and animations
 function initializeScrollEffects() {
-    // Parallax effects
-    window.addEventListener('scroll', handleParallaxEffects);
 
     // Intersection Observer for animations
     const observerOptions = {
@@ -326,19 +324,6 @@ function initializeScrollEffects() {
     // Observe all sections
     document.querySelectorAll('section').forEach(section => {
         observer.observe(section);
-    });
-}
-
-// Parallax effects
-function handleParallaxEffects() {
-    const scrolled = window.pageYOffset;
-    const rate = scrolled * -0.5;
-
-    // Move floating mathematical elements
-    const mathElements = document.querySelectorAll('.math-equation');
-    mathElements.forEach((element, index) => {
-        const speed = 0.5 + (index * 0.1);
-        element.style.transform = `translateY(${scrolled * speed}px)`;
     });
 }
 

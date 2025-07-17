@@ -157,16 +157,6 @@ class AnimationController {
         window.addEventListener('scroll', requestTick, {passive: true});
     }
 
-    updateMathEquations(scrollY) {
-        const mathElements = document.querySelectorAll('.math-equation');
-        mathElements.forEach((element, index) => {
-            const speed = 0.5 + (index * 0.1);
-            const yPos = scrollY * speed;
-            element.style.transform = `translateY(${yPos}px) rotate(${yPos * 0.01}deg)`;
-            element.style.opacity = Math.max(0.3, 0.8 - (scrollY * 0.001));
-        });
-    }
-
     updateNavbarOpacity(scrollY) {
         const navbar = document.getElementById('navbar');
         if (navbar) {
@@ -303,14 +293,6 @@ class AnimationController {
         }, {passive: true});
     }
 
-    // Mathematical animations
-    setupMathematicalAnimations() {
-        const equations = document.querySelectorAll('.math-equation');
-        equations.forEach((equation, index) => {
-            equation.style.animationDelay = `${index * 2}s`;
-            equation.classList.add('animate-float');
-        });
-    }
 
     // Progress bar animations
     setupProgressBars() {

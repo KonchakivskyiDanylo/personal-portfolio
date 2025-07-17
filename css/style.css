@@ -316,46 +316,7 @@ body {
     flex-wrap: wrap;
 }
 
-.hero-visual {
-    position: relative;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.floating-elements {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.math-equation {
-    position: absolute;
-    font-family: var(--font-code);
-    font-size: var(--math-equation-size);
-    color: var(--math-equation-color);
-    opacity: var(--math-equation-opacity);
-    animation: float 6s ease-in-out infinite;
-}
-
-.math-equation:nth-child(1) {
-    top: 20%;
-    left: 10%;
-    animation-delay: 0s;
-}
-
-.math-equation:nth-child(2) {
-    top: 60%;
-    right: 20%;
-    animation-delay: 2s;
-}
-
-.math-equation:nth-child(3) {
-    bottom: 30%;
-    left: 30%;
-    animation-delay: 4s;
-}
 
 .scroll-indicator {
     position: absolute;
@@ -1146,6 +1107,7 @@ body {
         transform: translateY(0);
     }
 }
+
 /* Project Detail Page Styles */
 .project-detail {
     padding-top: calc(var(--nav-height) + 2rem);
@@ -1233,6 +1195,7 @@ body {
     padding-top: var(--space-xl);
     border-top: 1px solid var(--border-light);
 }
+
 /* Enhanced Project Detail Styles */
 .methodology-section,
 .deployment-section {
@@ -1379,6 +1342,7 @@ body {
         flex-direction: column;
     }
 }
+
 .architecture-item {
     padding: var(--space-lg);
     background: var(--bg-glass);
@@ -1424,6 +1388,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
 .bot-features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
