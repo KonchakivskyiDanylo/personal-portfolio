@@ -7,7 +7,7 @@
 /* Education Hero Section */
 .education-hero {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 1fr 2fr;
     gap: var(--space-4xl);
     align-items: center;
     margin-bottom: var(--space-5xl);
@@ -149,6 +149,8 @@
     min-width: 100px;
     max-width: 120px;
     height: fit-content;
+    order: -1;
+    margin: 0 auto var(--space-lg);
 }
 
 
