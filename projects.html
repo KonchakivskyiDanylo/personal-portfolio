@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Danylo Konchakivskyi</title>
+    <meta name="description"
+          content="Explore my portfolio of AI/ML projects, web applications, and research implementations">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+          rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+</head>
+<body>
+<!-- Loading Screen -->
+<div id="loading-screen">
+    <div class="loader">
+        <div class="mathematical-loader">
+            <div class="equation">Loading...</div>
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="index.html">
+                <span class="logo-text">D</span>
+                <span class="logo-subtext">K</span>
+            </a>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="education.html" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+                <a href="research.html" class="nav-link">Research</a>
+            </li>
+            <li class="nav-item">
+                <a href="projects.html" class="nav-link active">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </li>
+        </ul>
+
+        <div class="nav-hamburger" id="nav-hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</nav>
+
+<main class="projects-page">
+    <div class="container">
+        <div class="page-header">
+            <h1>Projects</h1>
+            <p class="page-subtitle">Innovative solutions and implementations</p>
+        </div>
+
+        <div class="projects-content">
+            <!-- All Projects Grid -->
+            <section class="all-projects">
+
+                <div class="projects-grid">
+                    <!-- Volleyball Management Platform -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Volleyball Team Management Platform</h3>
+                            <span class="project-category">Full-Stack</span>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-description">
+                                Complete team management solution with Telegram bot interface for automated scheduling,
+                                voting workflows, and payment processing. Currently in production use.
+                            </p>
+                            <div class="project-highlights">
+                                <div class="highlight-item">
+                                    <span class="highlight-label">Status:</span>
+                                    <span class="highlight-value production">In Production</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-label">Users:</span>
+                                    <span class="highlight-value">Active Team</span>
+                                </div>
+                            </div>
+                            <div class="project-technologies">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Telegram API</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Heroku</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="projects/volleyball-management.html" class="btn btn-primary">
+                                    View Details
+                                </a>
+                                <a href="https://github.com/KonchakivskyiDanylo/volleyball-tg-bot"
+                                   class="btn btn-secondary" target="_blank">
+                                    <i class="icon-github"></i>
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ukrainian Air Alert System -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Ukrainian Air Alert System</h3>
+                            <span class="project-category">Machine Learning</span>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-description">
+                                University ML project for air raid alert prediction using weather data and news
+                                analysis. Features automated data collection and Telegram bot interface.
+                            </p>
+                            <div class="project-highlights">
+                                <div class="highlight-item">
+                                    <span class="highlight-label">Accuracy:</span>
+                                    <span class="highlight-value">~80%</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-label">Prediction:</span>
+                                    <span class="highlight-value">24-hour Range</span>
+                                </div>
+                            </div>
+                            <div class="project-technologies">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Scikit-learn</span>
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">TF-IDF</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="projects/air-alert-system.html" class="btn btn-primary">
+                                    View Details
+                                </a>
+                                <a href="https://github.com/KonchakivskyiDanylo/PythonForDs" class="btn btn-secondary"
+                                   target="_blank">
+                                    <i class="icon-github"></i>
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Legal Document Bot -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Legal Document Bot</h3>
+                            <span class="project-category">AI Application</span>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-description">
+                                AI-powered Telegram bot for processing and analyzing legal documents. Provides document
+                                summarization, key information extraction, and legal consultation assistance.
+                            </p>
+                            <div class="project-highlights">
+                                <div class="highlight-item">
+                                    <span class="highlight-label">Focus:</span>
+                                    <span class="highlight-value">Document AI</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-label">Processing:</span>
+                                    <span class="highlight-value">Real-time</span>
+                                </div>
+                            </div>
+                            <div class="project-technologies">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">NLP</span>
+                                <span class="tech-tag">Telegram API</span>
+                                <span class="tech-tag">OpenAI API</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="projects/legal-document-bot.html" class="btn btn-primary">
+                                    View Details
+                                </a>
+                                <a href="https://github.com/KonchakivskyiDanylo/law-tg-bot" class="btn btn-secondary"
+                                   target="_blank">
+                                    <i class="icon-github"></i>
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Formal Concept Analysis Implementation</h3>
+                            <span class="project-category">Research</span>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-description">
+                                Python implementation of FCA algorithms applied to voting data analysis. Research
+                                contribution at Kyiv School of Economics.
+                            </p>
+                            <div class="project-highlights">
+                                <div class="highlight-item">
+                                    <span class="highlight-label">Institution:</span>
+                                    <span class="highlight-value">KSE</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-label">Focus:</span>
+                                    <span class="highlight-value">Graph Theory</span>
+                                </div>
+                            </div>
+                            <div class="project-technologies">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">NetworkX</span>
+                                <span class="tech-tag">Algorithm Design</span>
+                                <span class="tech-tag">FCA</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="research.html" class="btn btn-primary">
+                                    View Research
+                                </a>
+                                <a href="https://github.com/KonchakivskyiDanylo/python-fca-analysis"
+                                   class="btn btn-secondary" target="_blank">
+                                    <i class="icon-github"></i>
+                                    Implementation
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Personal Portfolio -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Personal Portfolio Website</h3>
+                            <span class="project-category">Web Development</span>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-description">
+                                Modern, responsive portfolio website showcasing projects, research, and academic
+                                achievements. Built with vanilla JavaScript and custom CSS.
+                            </p>
+                            <div class="project-highlights">
+                                <div class="highlight-item">
+                                    <span class="highlight-label">Design:</span>
+                                    <span class="highlight-value">Custom UI/UX</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-label">Performance:</span>
+                                    <span class="highlight-value">Optimized</span>
+                                </div>
+                            </div>
+                            <div class="project-technologies">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="index.html" class="btn btn-primary">
+                                    View Live Site
+                                </a>
+                                <a href="https://github.com/KonchakivskyiDanylo/personal-portfolio"
+                                   class="btn btn-secondary" target="_blank">
+                                    <i class="icon-github"></i>
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- C++ Course Projects -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">C++ Programming Projects</h3>
+                            <span class="project-category">Programming</span>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-description">
+                                Collection of C++ programming assignments and final project demonstrating
+                                object-oriented programming, data structures, and algorithms.
+                            </p>
+                            <div class="project-highlights">
+                                <div class="highlight-item">
+                                    <span class="highlight-label">Projects:</span>
+                                    <span class="highlight-value">5+ Assignments</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-label">Concepts:</span>
+                                    <span class="highlight-value">OOP & Algorithms</span>
+                                </div>
+                            </div>
+                            <div class="project-technologies">
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">OOP</span>
+                                <span class="tech-tag">Data Structures</span>
+                                <span class="tech-tag">Algorithms</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="education.html" class="btn btn-primary">
+                                    View Education
+                                </a>
+                                <a href="https://github.com/KonchakivskyiDanylo/OOPCPlusPlus" class="btn btn-secondary"
+                                   target="_blank">
+                                    <i class="icon-github"></i>
+                                    Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coming Soon Project -->
+                    <div class="project-card coming-soon">
+                        <div class="project-header">
+                            <h3 class="project-title">More Projects Coming Soon</h3>
+                            <span class="project-category">In Development</span>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-description">
+                                Currently working on new projects. Stay tuned for updates!
+                            </p>
+                            <div class="project-actions">
+                                <a href="index.html#contact" class="btn btn-primary">
+                                    Get In Touch
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="cta-section">
+                <h2>Interested in Collaboration?</h2>
+                <p>I'm always open to discussing new projects, research opportunities, or just connecting with fellow
+                    developers and researchers.</p>
+                <div class="cta-buttons">
+                    <a href="index.html#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="research.html" class="btn btn-secondary">View Research</a>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <p>&copy; 2025 Danylo Konchakivskyi. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/KonchakivskyiDanylo" class="social-link" target="_blank">
+                    <i class="icon-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/danylo-konchakivskyi-b59a28365/" class="social-link"
+                   target="_blank">
+                    <i class="icon-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+    // Initialize loading screen
+    document.addEventListener('DOMContentLoaded', () => {
+        const loadingScreen = document.getElementById('loading-screen');
+        if (loadingScreen) {
+            setTimeout(() => {
+                loadingScreen.style.opacity = '0';
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }, 1500);
+        }
+    });
+</script>
+</body>
+</html>
