@@ -444,40 +444,30 @@ const projectsData = [
         title: "Ukrainian Air Alert System",
         description: "Real-time air alert monitoring system for Ukraine with 80% accuracy in threat detection.",
         technologies: ["Python", "Machine Learning", "AWS", "API Integration"],
-        image: "assets/images/air-alert-system.jpg",
         github: "https://github.com/KonchakivskyiDanylo/PythonForDs",
         demo: "#",
-        featured: true
+        featured: true,
+        status: "ML Project"
     },
     {
         id: 2,
         title: "Legal Assistant Telegram Chatbot",
         description: "AI-powered legal assistant providing consultation and document analysis.",
         technologies: ["Python", "Telegram Bot", "OpenAI API", "UpWork", "Heroku"],
-        image: "assets/images/legal-bot.jpg",
         github: "https://github.com/KonchakivskyiDanylo/law-tg-bot",
         demo: "#",
-        featured: true
+        featured: true,
+        status: "UpWork Project"
     },
     {
         id: 3,
-        title: "Formal Concept Analysis Library",
-        description: "Comprehensive Python implementation of FCA algorithms for data analysis.",
-        technologies: ["Python", "Algorithm Design", "Data Structures", "Mathematical Modeling"],
-        image: "assets/images/fca-library.png",
-        github: "https://github.com/KonchakivskyiDanylo/python-fca-analysis",
-        demo: "#",
-        featured: false
-    },
-    {
-        id: 4,
         title: "Volleyball Team Management Platform",
         description: "Production team management system with automated scheduling, voting workflows, and payment processing for active users.",
         technologies: ["Python", "Telegram Bot", "MongoDB", "Heroku", "Workflow Automation"],
-        image: "assets/images/volleyball-management.png",
         github: "https://github.com/KonchakivskyiDanylo/volleyball-tg-bot",
         demo: "#",
-        featured: true
+        featured: true,
+        status: "In Production"
     }
 
 ];
@@ -487,35 +477,42 @@ function generateProjectCards() {
     const projectsGrid = document.querySelector('.projects-grid');
     if (!projectsGrid) return;
 
-    projectsGrid.innerHTML = projectsData.map(project => `
+    const projectCards = projectsData.map(project => `
         <div class="project-card ${project.featured ? 'featured' : ''}" data-project-id="${project.id}">
-            <div class="project-image">
-                <img src="${project.image}" alt="${project.title}" loading="lazy">
-                <div class="project-overlay">
-                    <div class="project-links">
-                        <a href="projects/${project.id === 1 ? 'air-alert-system' :
-        project.id === 2 ? 'legal-bot' :
-            project.id === 3 ? 'fca-library' :
-                'volleyball'}.html" class="project-link">
-                            <i class="icon-external-link"></i>
-                            <span>View Details</span>
-                        </a>
-                        <a href="${project.github}" class="project-link" target="_blank">
-                            <i class="icon-github"></i>
-                            <span>GitHub</span>
-                        </a>
-                    </div>
-            </div>
+            <div class="project-header">
+                <h3 class="project-title">${project.title}</h3>
+                <span class="project-status">${project.status}</span>
             </div>
             <div class="project-content">
-                <h3 class="project-title">${project.title}</h3>
                 <p class="project-description">${project.description}</p>
                 <div class="project-technologies">
                     ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
                 </div>
+                <div class="project-actions">
+                    <a href="projects/${project.id === 1 ? 'air-alert-system' :
+        project.id === 2 ? 'legal-bot' :
+            project.id === 3 ? 'volleyball' : 'default'}.html" class="btn btn-primary">
+                        View Details
+                    </a>
+                    <a href="${project.github}" class="btn btn-secondary" target="_blank">
+                        <i class="icon-github"></i>
+                        GitHub
+                    </a>
+                </div>
             </div>
         </div>
     `).join('');
+
+    const viewAllButton = `
+        <div class="view-all-projects">
+            <a href="../projects.html" class="btn btn-outline">
+                <span>View All Projects</span>
+                <i class="icon-arrow-right"></i>
+            </a>
+        </div>
+    `;
+
+    projectsGrid.innerHTML = projectCards + viewAllButton;
 }
 
 // Back to Top Button functionality

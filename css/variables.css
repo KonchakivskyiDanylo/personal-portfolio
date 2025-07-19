@@ -4,7 +4,7 @@
     --primary-dark: #1a1a2e;
     --primary-blue: #16213e;
     --accent-blue: #0f3460;
-    --accent-gold: #ffd700;
+    --accent-gold: #8B5CF6;
     --accent-cyan: #00d4ff;
     --text-primary: #ffffff;
     --text-secondary: #b3b3b3;
@@ -118,7 +118,7 @@
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-blue) 100%);
     --gradient-accent: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-cyan) 100%);
-    --gradient-gold: linear-gradient(135deg, var(--accent-gold) 0%, #f39c12 100%);
+    --gradient-gold: linear-gradient(135deg, var(--accent-gold) 0%, #A78BFA 100%);
     --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
 
     /* Grid */
