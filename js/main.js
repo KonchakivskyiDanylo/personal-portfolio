@@ -445,7 +445,6 @@ const projectsData = [
         description: "Real-time air alert monitoring system for Ukraine with 80% accuracy in threat detection.",
         technologies: ["Python", "Machine Learning", "AWS", "API Integration"],
         github: "https://github.com/KonchakivskyiDanylo/PythonForDs",
-        demo: "#",
         featured: true,
         status: "ML Project"
     },
@@ -455,7 +454,6 @@ const projectsData = [
         description: "AI-powered legal assistant providing consultation and document analysis.",
         technologies: ["Python", "Telegram Bot", "OpenAI API", "UpWork", "Heroku"],
         github: "https://github.com/KonchakivskyiDanylo/law-tg-bot",
-        demo: "#",
         featured: true,
         status: "UpWork Project"
     },
@@ -465,7 +463,6 @@ const projectsData = [
         description: "Production team management system with automated scheduling, voting workflows, and payment processing for active users.",
         technologies: ["Python", "Telegram Bot", "MongoDB", "Heroku", "Workflow Automation"],
         github: "https://github.com/KonchakivskyiDanylo/volleyball-tg-bot",
-        demo: "#",
         featured: true,
         status: "In Production"
     }
