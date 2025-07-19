@@ -47,6 +47,7 @@ function initializeApp() {
     initializeGraphNetwork();
     initializeContactForm();
     initializeAnimations();
+    initializeBackToTop();
 
     console.log('✅ Portfolio initialized successfully!');
 }
@@ -515,6 +516,35 @@ function generateProjectCards() {
             </div>
         </div>
     `).join('');
+}
+
+// Back to Top Button functionality
+function initializeBackToTop() {
+    const backToTopButton = document.getElementById('back-to-top');
+    if (!backToTopButton) return;
+
+    // Show/hide button based on scroll position
+    const toggleBackToTopButton = () => {
+        if (window.scrollY > 300) {
+            backToTopButton.classList.add('show');
+        } else {
+            backToTopButton.classList.remove('show');
+        }
+    };
+
+    // Smooth scroll to top
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
+    // Event listeners
+    window.addEventListener('scroll', throttle(toggleBackToTopButton, 100));
+    backToTopButton.addEventListener('click', scrollToTop);
+
+    console.log('✅ Back to Top button initialized');
 }
 
 // Initialize projects when DOM is loaded
