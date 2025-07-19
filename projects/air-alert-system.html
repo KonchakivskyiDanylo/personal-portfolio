@@ -2,20 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title><!DOCTYPE html>
-        <html lang="en">
-        <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ukrainian Air Alert System - Danylo Konchakivskyi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ukrainian Air Alert System - Danylo Konchakivskyi</title>
+
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
           rel="stylesheet">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/variables.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project-detailed.css">
     <link rel="stylesheet" href="../css/animations.css">
+
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+    <link rel="icon" type="image/png" href="../assets/icons/favicon.png">
 </head>
 <body>
+<!-- Loading Screen -->
+<div id="loading-screen">
+    <div class="loader">
+        <div class="mathematical-loader">
+            <div class="equation">Loading...</div>
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+</div>
+
 <!-- Navigation -->
 <nav class="navbar" id="navbar">
     <div class="nav-container">
@@ -26,7 +41,7 @@
             </a>
         </div>
         <div class="nav-menu">
-            <a href="../index.html" class="nav-link">← Back to Portfolio</a>
+            <a href="../index.html#projects" class="nav-link">← Back to Projects</a>
         </div>
     </div>
 </nav>
@@ -35,7 +50,7 @@
     <div class="container">
         <div class="project-header">
             <h1>Ukrainian Air Alert System</h1>
-            <p class="project-subtitle">Real-time air alert monitoring system for Ukraine</p>
+            <p class="project-subtitle">University ML project for air raid alert prediction</p>
         </div>
 
         <div class="project-content">
@@ -44,209 +59,180 @@
             </div>
 
             <div class="project-details">
-                <div class="project-context">
-                    <h2>Project Context</h2>
-                    <p>This was a group project for my coursework at NaUKMA (National University of
-                        Kyiv-Mohyla Academy). All groups received the same assignment: create an air raid alert
-                        prediction system using weather data and daily news reports.</p>
-                </div>
-
-                <div class="project-problem">
+                <!-- The Assignment -->
+                <section class="assignment-section">
                     <h2>The Assignment</h2>
-                    <p>Our task was to build a prediction system that could forecast air raid alerts using two main data
-                        sources:</p>
-                    <ul>
-                        <li><strong>Weather Data:</strong> Hourly meteorological information for pattern analysis</li>
-                        <li><strong>Daily News Reports:</strong> Text analysis of daily news summaries
-                        </li>
-                    </ul>
-                    <p>The system needed to provide 24-hour predictions and include a user-friendly interface for
-                        interaction.</p>
-                </div>
+                    <p>This was a university project at NaUKMA where our task was to create a 24-hour air raid alert
+                        prediction system. The assignment required us to work with multiple data sources and build a
+                        complete machine learning pipeline from data collection to user interface.</p>
 
-                <div class="project-approach">
-                    <h2>Our Approach</h2>
-
-                    <div class="approach-section">
-                        <h3>Data Collection & Processing</h3>
-                        <ul>
-                            <li><strong>Weather Data:</strong> Automated hourly collection using cron jobs
-                            </li>
-                            <li><strong>News Reports:</strong> Daily text data for natural language processing</li>
-                            <li><strong>Air Alert Records:</strong> Historical alert data from public sources</li>
-                            <li><strong>Database:</strong> MongoDB for flexible storage of weather, text, and user data
-                            </li>
-                        </ul>
+                    <div class="assignment-requirements">
+                        <div class="requirement-item">
+                            <h4>Data Sources</h4>
+                            <ul>
+                                <li><strong>Historical Alert Data:</strong> 3 years of air raid alert records</li>
+                                <li><strong>Weather Data:</strong> Hourly meteorological information</li>
+                                <li><strong>News Reports:</strong> Daily reports processed with TF-IDF</li>
+                            </ul>
+                        </div>
+                        <div class="requirement-item">
+                            <h4>Project Stages</h4>
+                            <ul>
+                                <li>Parse and collect historical data</li>
+                                <li>Perform data analysis with visualizations</li>
+                                <li>Train and evaluate ML models</li>
+                                <li>Create user interface for predictions</li>
+                            </ul>
+                        </div>
                     </div>
+                </section>
 
-                    <div class="approach-section">
-                        <h3>Machine Learning & NLP Pipeline</h3>
-                        <ul>
-                            <li><strong>Weather Analysis:</strong> Time-series modeling with multiple algorithms</li>
-                            <li><strong>Text Processing:</strong> NLP pipeline including stemming, lemmatization, and
-                                TF-IDF vectorization
-                            </li>
-                            <li><strong>Model Training:</strong> GridSearchCV for hyperparameter optimization</li>
-                            <li><strong>Feature Engineering:</strong> Combined weather and text features</li>
-                        </ul>
+                <!-- Our Solution -->
+                <section class="solution-section">
+                    <h2>Our Solution</h2>
+                    <p>We approached this project with a focus on automation and user accessibility. While the core ML
+                        task was challenging, we made strategic decisions to create a practical, user-friendly
+                        system.</p>
+
+                    <div class="solution-highlights">
+                        <div class="solution-item">
+                            <h4>Data Pipeline</h4>
+                            <p>Automated hourly data collection using cron jobs to continuously gather weather data and
+                                process daily news reports for real-time predictions.</p>
+                        </div>
+                        <div class="solution-item">
+                            <h4>ML Approach</h4>
+                            <p>Tested multiple algorithms and selected Random Forest for our final model, focusing on
+                                practical performance over theoretical perfection.</p>
+                        </div>
+                        <div class="solution-item">
+                            <h4>Smart Interface Choice</h4>
+                            <p>Created a simple web interface with Ukraine map, but made Telegram bot our primary
+                                interface since it's better for real-time notifications.</p>
+                        </div>
                     </div>
+                </section>
 
-                    <div class="approach-section">
-                        <h3>System Architecture</h3>
-                        <ul>
-                            <li><strong>Flask Web Application:</strong> REST API and web interface</li>
-                            <li><strong>Telegram Bot API:</strong> User interaction and notification system</li>
-                            <li><strong>MongoDB:</strong> User data, predictions, and historical records</li>
-                            <li><strong>AWS EC2:</strong> Cloud hosting and processing</li>
-                            <li><strong>Cron Jobs:</strong> Data collection and daily prediction scheduling</li>
-                        </ul>
-                    </div>
+                <!-- Telegram Bot - The Key Feature -->
+                <section class="telegram-section">
+                    <h2>Telegram Bot - Our Main Innovation</h2>
+                    <p>Recognizing that people use Telegram more than websites for notifications, we built a
+                        comprehensive bot that became the heart of our system.</p>
 
-                    <div class="approach-section">
-                        <h3>Data Analysis & Visualization</h3>
-                        <ul>
-                            <li><strong>Jupyter Notebooks:</strong> Comprehensive analysis of historical alert patterns
-                            </li>
-                            <li><strong>Weather Correlation Analysis:</strong> Statistical analysis of weather-alert
-                                relationships
-                            </li>
-                            <li><strong>Text Analysis:</strong> News sentiment and keyword frequency analysis</li>
-                            <li><strong>Temporal Patterns:</strong> Time-based alert frequency and duration analysis
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="project-telegram-bot">
-                    <h2>Telegram Bot Interface</h2>
-                    <p>To make the system more accessible and user-friendly, we developed a Telegram bot that serves as
-                        the main interface for users.</p>
-
-                    <div class="bot-features">
-                        <div class="bot-feature">
+                    <div class="bot-commands">
+                        <div class="command-item">
                             <h4>/predict Command</h4>
-                            <p>Users can select their region and receive 24-hour predictions for air raid alerts in
-                                their area.</p>
+                            <p>Users select their region and receive a 24-hour prediction for air raid alerts in their
+                                area.</p>
                         </div>
-
-                        <div class="bot-feature">
+                        <div class="command-item">
                             <h4>/alarms Command</h4>
-                            <p>Displays current active air raid alerts across different regions.</p>
-                        </div>
-
-                        <div class="bot-feature">
-                            <h4>Location-Based Notifications</h4>
-                            <p>When users start the bot, their location is saved to MongoDB. They automatically receive
-                                notifications when alerts begin or end in their region.</p>
-                        </div>
-
-                        <div class="bot-feature">
-                            <h4>Daily Predictions</h4>
-                            <p>Users can set their preferred time to receive daily 24-hour predictions via
-                                cron-scheduled messages.</p>
+                            <p>Shows current active air raid alerts across different regions for immediate situational
+                                awareness.</p>
                         </div>
                     </div>
-                </div>
 
-                <div class="project-results">
-                    <h2>Results</h2>
-                    <div class="results-summary">
-                        <div class="result-item">
-                            <span class="result-value">~80%</span>
-                            <span class="result-label">Best Model Accuracy</span>
+                    <div class="smart-features">
+                        <h4>Intelligent Features</h4>
+                        <div class="feature-grid">
+                            <div class="feature-card">
+                                <h5>Location-Based Notifications</h5>
+                                <p>When users register, their location is saved to MongoDB. They automatically receive
+                                    notifications when alerts begin or end in their region.</p>
+                            </div>
+                            <div class="feature-card">
+                                <h5>Scheduled Daily Predictions</h5>
+                                <p>Users choose their preferred time (e.g., 12:00) and receive automated daily 24-hour
+                                    predictions via cron-scheduled messages.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="project-insights">
-                    <h2>Key Insights & Reflections</h2>
-                    <div class="insight-item">
-                        <h4>Limitations of Weather-Based Prediction</h4>
-                        <p>While we achieved decent statistical performance, the project revealed fundamental
-                            limitations in predicting human conflict behavior through environmental data alone. Air raid
-                            alerts depend heavily on strategic, political, and tactical decisions that don't correlate
-                            strongly with weather patterns.</p>
+                <!-- Technical Implementation -->
+                <section class="implementation-section">
+                    <h2>Technical Implementation</h2>
+
+                    <div class="tech-overview">
+                        <h4>System Architecture</h4>
+                        <p>Built on AWS EC2 with Flask backend, MongoDB for data storage, and integrated Telegram API
+                            for user interaction. The system runs continuously with automated data collection and
+                            processing.</p>
                     </div>
 
-                    <div class="insight-item">
-                        <h4>Technical Learning Experience</h4>
-                        <p>Despite the predictive limitations, this project provided valuable experience with:</p>
-                        <ul>
-                            <li>Real-time data collection and processing pipelines</li>
-                            <li>Working with time-series data and temporal patterns</li>
-                            <li>Cloud deployment and automation</li>
-                            <li>Team collaboration on ML projects</li>
-                        </ul>
+                    <div class="implementation-details">
+                        <div class="detail-card">
+                            <h5>Data Processing Pipeline</h5>
+                            <ul>
+                                <li>Hourly cron jobs collect weather data for next 24 hours</li>
+                                <li>Daily news reports processed through TF-IDF vectorization</li>
+                                <li>Historical alert patterns analyzed for model training</li>
+                                <li>MongoDB stores user data, predictions, and historical records</li>
+                            </ul>
+                        </div>
+                        <div class="detail-card">
+                            <h5>ML & Automation</h5>
+                            <ul>
+                                <li>Random Forest model selected after testing multiple algorithms</li>
+                                <li>Flask REST API serves predictions and data visualization</li>
+                                <li>Cron scheduling for automated daily predictions</li>
+                                <li>Real-time alert monitoring and user notifications</li>
+                            </ul>
+                        </div>
                     </div>
 
-                    <div class="insight-item">
-                        <h4>Academic Value</h4>
-                        <p>This project served as an excellent learning exercise in applying ML to real-world problems,
-                            understanding data limitations, and recognizing when certain problems may not be well-suited
-                            for pure data-driven approaches. It taught us the importance of domain knowledge and the
-                            complexity of human behavior prediction.</p>
-                    </div>
-                </div>
-
-
-                <div class="project-tech">
-                    <h2>Technologies Used</h2>
-                    <div class="tech-categories">
-                        <div class="tech-category">
-                            <h4>Backend & API</h4>
-                            <div class="tech-tags">
+                    <div class="tech-stack">
+                        <h4>Technologies Used</h4>
+                        <div class="tech-categories">
+                            <div class="tech-group">
+                                <span class="tech-label">Backend:</span>
                                 <span class="tech-tag">Python</span>
                                 <span class="tech-tag">Flask</span>
-                                <span class="tech-tag">Telegram Bot API</span>
                                 <span class="tech-tag">MongoDB</span>
                             </div>
-                        </div>
-                        <div class="tech-category">
-                            <h4>Machine Learning & NLP</h4>
-                            <div class="tech-tags">
+                            <div class="tech-group">
+                                <span class="tech-label">ML & Data:</span>
                                 <span class="tech-tag">Scikit-learn</span>
                                 <span class="tech-tag">Pandas</span>
-                                <span class="tech-tag">NumPy</span>
+                                <span class="tech-tag">MatPlotlib</span>
                                 <span class="tech-tag">TF-IDF</span>
-                                <span class="tech-tag">NLTK</span>
+                                <span class="tech-tag">Random Forest</span>
                             </div>
-                        </div>
-                        <div class="tech-category">
-                            <h4>Data Analysis</h4>
-                            <div class="tech-tags">
-                                <span class="tech-tag">Jupyter Notebooks</span>
-                                <span class="tech-tag">Matplotlib</span>
-                                <span class="tech-tag">Seaborn</span>
-                                <span class="tech-tag">Statistical Analysis</span>
-                            </div>
-                        </div>
-                        <div class="tech-category">
-                            <h4>Infrastructure</h4>
-                            <div class="tech-tags">
+                            <div class="tech-group">
+                                <span class="tech-label">Infrastructure:</span>
                                 <span class="tech-tag">AWS EC2</span>
-                                <span class="tech-tag">Cron</span>
-                                <span class="tech-tag">API Integration</span>
-                                <span class="tech-tag">Weather APIs</span>
+                                <span class="tech-tag">Telegram API</span>
+                                <span class="tech-tag">Cron Jobs</span>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="project-architecture">
-                    <h2>System Architecture</h2>
-                    <div class="architecture-item">
-                        <h4>Flask Web Application</h4>
-                        <p>Built REST API endpoints for data visualization and model predictions. Flask served as the
-                            main web framework for presenting results and allowing team members to interact with the
-                            model.</p>
-                    </div>
-                    <div class="architecture-item">
-                        <h4>Data Pipeline</h4>
-                        <p>Automated data collection through cron jobs → MongoDB storage → Flask API → ML model
-                            processing → Results visualization</p>
-                    </div>
-                </div>
+                <!-- Honest Reflection -->
+                <section class="reflection-section">
+                    <h2>Reflection & Learning</h2>
 
-                <div class="project-links">
+                    <div class="reflection-content">
+                        <div class="learning-item">
+                            <h4>Technical Value</h4>
+                            <p>This project provided excellent hands-on experience with real-time data pipelines,
+                                automated systems, cloud deployment, and team collaboration on ML projects. The
+                                integration of multiple technologies and services was particularly valuable.</p>
+                        </div>
+
+                        <div class="learning-item">
+                            <h4>Realistic Assessment</h4>
+                            <p>Honestly, predicting human strategic decisions through weather patterns and news reports
+                                is fundamentally impossible. Air raid alerts depend on tactical, political, and
+                                strategic factors that don't correlate with environmental data. The model accuracy
+                                metrics were misleading since "no alert" is the most frequent outcome.</p>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Project Links -->
+                <section class="project-links">
                     <a href="https://github.com/KonchakivskyiDanylo/PythonForDs" class="btn btn-primary"
                        target="_blank">
                         <i class="icon-github"></i>
@@ -256,23 +242,44 @@
                         <i class="icon-arrow-left"></i>
                         Back to Projects
                     </a>
-                </div>
+                </section>
             </div>
         </div>
     </div>
 </main>
 
+<!-- Footer -->
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
             <p>&copy; 2025 Danylo Konchakivskyi. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/KonchakivskyiDanylo" class="social-link" target="_blank">
+                    <i class="icon-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/danylo-konchakivskyi-b59a28365/" class="social-link"
+                   target="_blank">
+                    <i class="icon-linkedin"></i>
+                </a>
+            </div>
         </div>
     </div>
 </footer>
-</body>
-</html></title>
-</head>
-<body>
 
+<script src="../js/main.js"></script>
+<script>
+    // Initialize loading screen
+    document.addEventListener('DOMContentLoaded', () => {
+        const loadingScreen = document.getElementById('loading-screen');
+        if (loadingScreen) {
+            setTimeout(() => {
+                loadingScreen.style.opacity = '0';
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }, 1500);
+        }
+    });
+</script>
 </body>
 </html>

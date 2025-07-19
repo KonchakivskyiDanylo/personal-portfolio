@@ -495,7 +495,7 @@ function generateProjectCards() {
                         <a href="projects/${project.id === 1 ? 'air-alert-system' :
         project.id === 2 ? 'legal-bot' :
             project.id === 3 ? 'fca-library' :
-                'volleyball-management'}.html" class="project-link">
+                'volleyball'}.html" class="project-link">
                             <i class="icon-external-link"></i>
                             <span>View Details</span>
                         </a>
