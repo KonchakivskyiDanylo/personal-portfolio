@@ -43,8 +43,8 @@
 
 .project-image-large img {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 400px;
+    object-fit: cover;
     transition: transform var(--transition-base);
 }
 
@@ -427,6 +427,15 @@
     box-shadow: 0 8px 25px rgba(0, 212, 255, 0.15);
 }
 
+.learning-item.realistic {
+    background: linear-gradient(145deg, rgba(255, 215, 0, 0.1), rgba(255, 255, 255, 0.05));
+    border-color: rgba(255, 215, 0, 0.3);
+}
+
+.learning-item.realistic:hover {
+    border-color: var(--accent-gold);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.15);
+}
 
 .learning-item h4 {
     font-family: 'Inter', sans-serif;
@@ -582,14 +591,13 @@
     animation-delay: 0.4s;
 }
 
-.project-card:nth-child(5) {
+.project-details section:nth-child(5) {
     animation-delay: 0.5s;
 }
 
-.project-card:nth-child(6) {
+.project-details section:nth-child(6) {
     animation-delay: 0.6s;
 }
-
 
 @keyframes fadeInUp {
     from {
