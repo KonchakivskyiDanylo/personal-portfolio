@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formal Concept Analysis Implementation - Danylo Konchakivskyi</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+          rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project-detailed.css">
+    <link rel="stylesheet" href="../css/animations.css">
+
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+    <link rel="icon" type="image/png" href="../assets/icons/favicon.png">
+</head>
+<body>
+<!-- Loading Screen -->
+<div id="loading-screen">
+    <div class="loader">
+        <div class="mathematical-loader">
+            <div class="equation">Loading...</div>
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="../index.html">
+                <span class="logo-text">D</span>
+                <span class="logo-subtext">K</span>
+            </a>
+        </div>
+        <div class="nav-menu">
+            <a href="../index.html#projects" class="nav-link">← Back to Projects</a>
+        </div>
+    </div>
+</nav>
+
+<main class="project-detail">
+    <div class="container">
+        <div class="project-header">
+            <h1>Formal Concept Analysis Implementation</h1>
+            <p class="project-subtitle">Python FCA libraries analysis for sociological research</p>
+        </div>
+
+        <div class="project-content">
+            <div class="project-details">
+                <!-- Project Overview -->
+                <section class="project-overview">
+                    <h2>Project Overview</h2>
+                    <p>Research project developed as part of KSE Graph Theory Lab collaboration, focusing on applying
+                        Formal Concept Analysis (FCA) to sociological data. The project benchmarks Python FCA libraries
+                        and extracts insights from European Social Survey datasets spanning multiple years.</p>
+
+                    <div class="project-metrics">
+                        <div class="metric-item">
+                            <span class="metric-value">3 Libraries</span>
+                            <span class="metric-label">Benchmarked</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-value">9 Survey Rounds</span>
+                            <span class="metric-label">ESS Data Analysis</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-value">Temporal Analysis</span>
+                            <span class="metric-label">Multi-year Trends</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Research Context -->
+                <section class="problem-solution">
+                    <h2>Research Context & Goals</h2>
+                    <div class="challenge-grid">
+                        <div class="challenge-item">
+                            <h4>Research Challenge</h4>
+                            <p>Apply mathematical FCA methods to sociological survey data to discover hidden patterns,
+                                association rules, and temporal trends in public opinion across multiple European Social
+                                Survey rounds.</p>
+                        </div>
+                        <div class="challenge-item">
+                            <h4>Technical Approach</h4>
+                            <p>Benchmark three Python FCA libraries, develop data processing pipelines, and create
+                                analysis tools for extracting formal concepts and association rules from survey
+                                datasets.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Core FCA Concepts -->
+                <section class="features-section">
+                    <h2>Formal Concept Analysis Framework</h2>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <h4>Concept Lattices</h4>
+                            <p>Mathematical structures revealing hierarchical relationships between survey respondents
+                                and their shared characteristics</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Association Rules</h4>
+                            <p>Extract "If A then B" logical relationships from survey data with configurable support
+                                and confidence thresholds</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Formal Contexts</h4>
+                            <p>Transform numerical survey data into boolean representations using quantile-based binning
+                                for FCA processing</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Temporal Analysis</h4>
+                            <p>Track rule stability and changes across different survey years to identify evolving
+                                social patterns</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Technical Implementation -->
+                <section class="technical-section">
+                    <h2>Technical Implementation</h2>
+                    <div class="tech-breakdown">
+                        <div class="tech-category">
+                            <h4>Data Processing Pipeline</h4>
+                            <ul>
+                                <li>Automated data preprocessing with configurable quantile-based binning</li>
+                                <li>Conversion of numerical survey data to boolean formal contexts</li>
+                                <li>Mapping functionality from technical codes to human-readable descriptions</li>
+                                <li>Cross-temporal dataset alignment and comparison tools</li>
+                            </ul>
+                        </div>
+                        <div class="tech-category">
+                            <h4>FCA Analysis Engine</h4>
+                            <ul>
+                                <li>Implementation of concept lattice generation algorithms</li>
+                                <li>Association rule mining with support, confidence, and lift metrics</li>
+                                <li>Network visualization of rule relationships and concept hierarchies</li>
+                                <li>Statistical evaluation and validation of extracted patterns</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Library Comparison -->
+                <section class="architecture-section">
+                    <h2>Python FCA Libraries Comparison</h2>
+                    <div class="architecture-grid">
+                        <div class="architecture-item">
+                            <h4>fcapy (Recommended)</h4>
+                            <p>Excellent performance and usability with comprehensive concept extraction capabilities.
+                                Best documentation and ease of use for research applications.</p>
+                        </div>
+                        <div class="architecture-item">
+                            <h4>concepts</h4>
+                            <p>Basic functionality with limited implications support. Good for simple concept analysis
+                                but lacks advanced features needed for complex research.</p>
+                        </div>
+                        <div class="architecture-item">
+                            <h4>fca-algorithms</h4>
+                            <p>Strong implication mining capabilities but poor documentation. Suitable for advanced
+                                users requiring specialized algorithmic approaches.</p>
+                        </div>
+                        <div class="architecture-item">
+                            <h4>Research Recommendation</h4>
+                            <p>Use fcapy for concept extraction and fca-algorithms for implication mining to leverage
+                                the strengths of both libraries in research workflows.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Research Results -->
+                <section class="results-section">
+                    <h2>Research Outcomes</h2>
+                    <div class="insights-grid">
+                        <div class="insight-item">
+                            <h4>Library Benchmarking</h4>
+                            <p>Comprehensive comparison of three Python FCA libraries providing clear guidance for
+                                researchers choosing appropriate tools for sociological data analysis.</p>
+                        </div>
+                        <div class="insight-item">
+                            <h4>Methodological Contribution</h4>
+                            <p>Developed robust data processing pipeline and analysis framework that bridges
+                                mathematical FCA theory with practical sociological research applications.</p>
+                        </div>
+                        <div class="insight-item">
+                            <h4>Open Source Tools</h4>
+                            <p>Created reusable analysis tools with comprehensive documentation, testing suite, and
+                                visualization capabilities for the research community.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Technologies -->
+                <section class="technologies-section">
+                    <h2>Technologies Used</h2>
+                    <div class="tech-categories">
+                        <div class="tech-category">
+                            <h4>FCA Libraries</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">fcapy</span>
+                                <span class="tech-tag">concepts</span>
+                                <span class="tech-tag">fca-algorithms</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <h4>Data Analysis</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Pandas</span>
+                                <span class="tech-tag">NumPy</span>
+                                <span class="tech-tag">NetworkX</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <h4>Visualization</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Matplotlib</span>
+                                <span class="tech-tag">Network Graphs</span>
+                                <span class="tech-tag">Statistical Plots</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <h4>Research Tools</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Pytest</span>
+                                <span class="tech-tag">Documentation</span>
+                                <span class="tech-tag">ESS Data</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Project Links -->
+                <section class="project-links">
+                    <a href="https://github.com/KonchakivskyiDanylo/python-fca-analysis" class="btn btn-primary"
+                       target="_blank">
+                        <i class="icon-github"></i>
+                        View Implementation
+                    </a>
+                    <a href="../research.html" class="btn btn-secondary">
+                        <i class="icon-arrow-left"></i>
+                        View Research
+                    </a>
+                </section>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <p>&copy; 2025 Danylo Konchakivskyi. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/KonchakivskyiDanylo" class="social-link" target="_blank">
+                    <i class="icon-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/danylo-konchakivskyi-b59a28365/" class="social-link"
+                   target="_blank">
+                    <i class="icon-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+    // Initialize loading screen
+    document.addEventListener('DOMContentLoaded', () => {
+        const loadingScreen = document.getElementById('loading-screen');
+        if (loadingScreen) {
+            setTimeout(() => {
+                loadingScreen.style.opacity = '0';
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }, 1500);
+        }
+    });
+</script>
+</body>
+</html>
