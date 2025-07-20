@@ -30,13 +30,19 @@
 .projects-content {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 var(--space-lg);
+}
+
+.all-projects {
+    margin-bottom: var(--space-5xl);
 }
 
 /* Projects Grid */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: var(--space-2xl);
+    gap: var(--space-3xl);
+    margin-bottom: var(--space-2xl);
 }
 
 .project-card {
@@ -326,6 +332,11 @@
 
     .projects-grid {
         grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+
+    .projects-content {
+        padding: 0 var(--space-md);
     }
 
     .project-card,
