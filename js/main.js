@@ -79,12 +79,13 @@ function toggleMobileMenu() {
 }
 
 // Handle navigation link clicks
+// Handle navigation link clicks
 function handleNavLinkClick(e) {
     e.preventDefault();
 
     const targetId = e.target.getAttribute('href');
 
-    if (targetId.endsWith('.html')) {
+    if (targetId.includes('.html')) {
         window.location.href = targetId;
         return;
     }
@@ -92,6 +93,10 @@ function handleNavLinkClick(e) {
     const targetSection = document.querySelector(targetId);
 
     if (targetSection) {
+        // Immediately update active state for visual feedback
+        const sectionId = targetId.substring(1);
+        updateActiveNavLink(sectionId);
+
         // Close mobile menu if open
         elements.navMenu.classList.remove('active');
         elements.navHamburger.classList.remove('active');
@@ -102,9 +107,6 @@ function handleNavLinkClick(e) {
             behavior: 'smooth',
             block: 'start'
         });
-
-        // Update active link
-        updateActiveNavLink(targetId.substring(1));
     }
 }
 
@@ -120,10 +122,15 @@ function handleNavbarScroll() {
 }
 
 // Update active navigation link
+// Update active navigation link
 function updateActiveNavLink(sectionId) {
     elements.navLinks.forEach(link => {
         link.classList.remove('active');
-        if (link.getAttribute('href') === `#${sectionId}`) {
+        const href = link.getAttribute('href');
+
+        // Handle both hash links and external pages
+        if (href === `#${sectionId}` ||
+            (href.includes('.html') && sectionId === 'home' && href === '#home')) {
             link.classList.add('active');
         }
     });
@@ -131,21 +138,29 @@ function updateActiveNavLink(sectionId) {
 }
 
 // Update active section based on scroll position
+// Update active section based on scroll position
 function updateActiveSection() {
     const sections = document.querySelectorAll('section[id]');
-    const scrollY = window.scrollY + 100;
+    const scrollY = window.scrollY;
+    const windowHeight = window.innerHeight;
+
+    let activeSection = 'home'; // default
 
     sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
+        const sectionTop = section.offsetTop - 100; // Account for navbar height
+        const sectionBottom = sectionTop + section.offsetHeight;
         const sectionId = section.getAttribute('id');
 
-        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-            if (currentSection !== sectionId) {
-                updateActiveNavLink(sectionId);
-            }
+        // Check if section is in viewport (more than 50% visible)
+        if (scrollY >= sectionTop && scrollY < sectionBottom) {
+            activeSection = sectionId;
         }
     });
+
+    // Only update if different from current
+    if (currentSection !== activeSection) {
+        updateActiveNavLink(activeSection);
+    }
 }
 
 // Typewriter effect
@@ -460,7 +475,8 @@ function initializeBackToTop() {
     };
 
     // Event listeners
-    window.addEventListener('scroll', throttle(toggleBackToTopButton, 100));
+
+    window.addEventListener('scroll', throttle(updateActiveSection, 50));
     backToTopButton.addEventListener('click', scrollToTop);
 
     console.log('✅ Back to Top button initialized');
