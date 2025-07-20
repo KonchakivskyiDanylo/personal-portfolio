@@ -437,81 +437,6 @@ function showNotification(message, type = 'info') {
     }, 4000);
 }
 
-// Projects data
-const projectsData = [
-    {
-        id: 1,
-        title: "Ukrainian Air Alert System",
-        description: "Real-time air alert monitoring system for Ukraine with 80% accuracy in threat detection.",
-        technologies: ["Python", "Machine Learning", "AWS", "API Integration"],
-        github: "https://github.com/KonchakivskyiDanylo/PythonForDs",
-        featured: true,
-        status: "ML Project"
-    },
-    {
-        id: 2,
-        title: "Legal Assistant Telegram Chatbot",
-        description: "AI-powered legal assistant providing consultation and document analysis.",
-        technologies: ["Python", "Telegram Bot", "OpenAI API", "UpWork", "Heroku"],
-        github: "https://github.com/KonchakivskyiDanylo/law-tg-bot",
-        featured: true,
-        status: "UpWork Project"
-    },
-    {
-        id: 3,
-        title: "Volleyball Team Management Platform",
-        description: "Production team management system with automated scheduling, voting workflows, and payment processing for active users.",
-        technologies: ["Python", "Telegram Bot", "MongoDB", "Heroku", "Workflow Automation"],
-        github: "https://github.com/KonchakivskyiDanylo/volleyball-tg-bot",
-        featured: true,
-        status: "In Production"
-    }
-
-];
-
-// Generate project cards
-function generateProjectCards() {
-    const projectsGrid = document.querySelector('.projects-grid');
-    if (!projectsGrid) return;
-
-    const projectCards = projectsData.map(project => `
-        <div class="project-card ${project.featured ? 'featured' : ''}" data-project-id="${project.id}">
-            <div class="project-header">
-                <h3 class="project-title">${project.title}</h3>
-                <span class="project-status">${project.status}</span>
-            </div>
-            <div class="project-content">
-                <p class="project-description">${project.description}</p>
-                <div class="project-technologies">
-                    ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
-                </div>
-                <div class="project-actions">
-                    <a href="projects/${project.id === 1 ? 'air-alert-system' :
-        project.id === 2 ? 'legal-bot' :
-            project.id === 3 ? 'volleyball' : 'default'}.html" class="btn btn-primary">
-                        View Details
-                    </a>
-                    <a href="${project.github}" class="btn btn-secondary" target="_blank">
-                        <i class="icon-github"></i>
-                        GitHub
-                    </a>
-                </div>
-            </div>
-        </div>
-    `).join('');
-
-    const viewAllButton = `
-        <div class="view-all-projects">
-            <a href="../projects.html" class="btn btn-outline">
-                <span>View All Projects</span>
-                <i class="icon-arrow-right"></i>
-            </a>
-        </div>
-    `;
-
-    projectsGrid.innerHTML = projectCards + viewAllButton;
-}
-
 // Back to Top Button functionality
 function initializeBackToTop() {
     const backToTopButton = document.getElementById('back-to-top');
@@ -540,11 +465,6 @@ function initializeBackToTop() {
 
     console.log('✅ Back to Top button initialized');
 }
-
-// Initialize projects when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-    generateProjectCards();
-});
 
 // Export functions for potential use in other files
 window.PortfolioApp = {
