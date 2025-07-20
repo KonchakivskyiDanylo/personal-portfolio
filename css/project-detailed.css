@@ -201,6 +201,16 @@
     overflow: hidden;
 }
 
+.telegram-section p {
+    text-align: center;
+    margin-bottom: var(--space-md);
+}
+
+.telegram-section h2 {
+    text-align: center;
+    margin-bottom: var(--space-md);
+}
+
 .telegram-section::before {
     content: '';
     position: absolute;
@@ -337,8 +347,8 @@
 .features-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-lg);
-    margin-top: var(--space-xl);
+    gap: var(--space-2xl);
+    margin: var(--space-xl) var(--space-lg) var(--space-2xl) var(--space-lg);
 }
 
 .detail-card li {
