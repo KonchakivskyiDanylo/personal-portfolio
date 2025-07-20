@@ -477,6 +477,7 @@ function initializeBackToTop() {
     // Event listeners
 
     window.addEventListener('scroll', throttle(updateActiveSection, 50));
+    window.addEventListener('scroll', throttle(toggleBackToTopButton, 100));
     backToTopButton.addEventListener('click', scrollToTop);
 
     console.log('✅ Back to Top button initialized');
