@@ -478,7 +478,7 @@
 
 .languages-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Change from auto-fit to 2 columns */
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--space-xl);
     margin-top: var(--space-lg);
 }
