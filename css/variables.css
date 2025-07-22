@@ -1,7 +1,7 @@
 /* CSS Custom Properties (Variables) */
 :root {
     /* Color Palette */
-    --primary-dark: #1a1a2e;
+    --primary-dark: #242447;
     --primary-blue: #16213e;
     --accent-blue: #0f3460;
     --accent-gold: #8B5CF6;
@@ -16,8 +16,8 @@
     --shadow-glow: rgba(0, 212, 255, 0.3);
 
     /* Typography */
-    --font-heading: 'Orbitron', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --font-heading: 'GT Walsheim', sans-serif;
+    --font-body: 'Source Sans Pro', sans-serif;
     --font-code: 'Fira Code', monospace;
 
     /* Font Weights */
