@@ -1,11 +1,5 @@
 /* Research Page Styles for Danylo's Portfolio - Streamlined Version */
 
-/* Research Page Layout */
-.research-page {
-    padding-top: calc(var(--nav-height) + 2rem);
-    min-height: 100vh;
-}
-
 /* Research Hero Section */
 .research-hero {
     display: grid;

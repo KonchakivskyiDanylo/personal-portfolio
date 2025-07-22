@@ -1,10 +1,15 @@
 /* Base Styles */
+.page-layout {
+    padding-top: var(--padding-top-cal);
+    min-height: var(--min-height);
+}
+
 body {
     font-family: var(--font-body), sans-serif;
     font-weight: var(--fw-regular);
     color: var(--text-primary);
     background: var(--gradient-primary);
-    min-height: 100vh;
+    min-height: var(--min-height);
     overscroll-behavior: none;
 }
 
@@ -225,7 +230,7 @@ body {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    min-height: var(--min-height);
     display: flex;
     align-items: center;
     position: relative;
@@ -1247,11 +1252,6 @@ body {
     }
 }
 
-/* Project Detail Page Styles */
-.project-detail {
-    padding-top: calc(var(--nav-height) + 2rem);
-    min-height: 100vh;
-}
 
 .project-header {
     display: flex;

@@ -1,11 +1,5 @@
 /* Project Detail Page Styles - Rewritten for Better Storytelling */
 
-/* Main Layout */
-.project-detail {
-    padding-top: calc(var(--nav-height) + 2rem);
-    min-height: 100vh;
-}
-
 .project-header {
     text-align: center;
     margin-bottom: var(--space-5xl);
