@@ -1,12 +1,4 @@
 /* Enhanced About Hero Section */
-.about-hero {
-    display: grid;
-    grid-template-columns: 280px 1fr;
-    gap: var(--space-5xl);
-    align-items: center;
-    margin-bottom: var(--space-5xl);
-}
-
 .about-photo {
     width: 280px;
     height: 280px;
@@ -342,7 +334,7 @@
 
 /* Improved Responsive Design */
 @media (max-width: 768px) {
-    .about-hero {
+    .hero-section {
         grid-template-columns: 1fr;
         gap: var(--space-3xl);
         text-align: center;
