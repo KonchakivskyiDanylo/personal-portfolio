@@ -156,7 +156,7 @@
 
 .solution-item {
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-    border: 1px solid rgba(0, 212, 255, 0.3);
+    border: 1px solid var(--shadow-glow);
     border-radius: var(--radius-xl);
     padding: var(--space-xl);
     backdrop-filter: blur(10px);
@@ -166,7 +166,7 @@
 .solution-item:hover {
     transform: translateY(-5px);
     border-color: var(--accent-cyan);
-    box-shadow: 0 15px 40px rgba(0, 212, 255, 0.2);
+    box-shadow: 0 15px 40px var(--shadow-glow);
 }
 
 .solution-item h4 {
@@ -578,7 +578,7 @@
 
 .insight-item {
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-    border: 1px solid rgba(0, 212, 255, 0.3);
+    border: 1px solid var(--shadow-glow);
     border-radius: var(--radius-xl);
     padding: var(--space-xl);
     backdrop-filter: blur(10px);
@@ -588,7 +588,7 @@
 .insight-item:hover {
     transform: translateY(-5px);
     border-color: var(--accent-cyan);
-    box-shadow: 0 15px 40px rgba(0, 212, 255, 0.2);
+    box-shadow: 0 15px 40px var(--shadow-glow);
 }
 
 .insight-item h4 {
