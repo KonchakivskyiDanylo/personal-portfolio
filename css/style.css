@@ -13,13 +13,13 @@
 }
 
 .photo {
-    width: 280px;
-    height: 280px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     overflow: hidden;
     border: var(--borders-4);
-    box-shadow: var(--shadow-glow-lg);
-    margin: 0 auto;
+    box-shadow: var(--shadow-glow-sm);
+    margin: 0 auto var(--space-lg);
     transition: all var(--transition-base);
 }
 
@@ -33,6 +33,7 @@
     height: 100%;
     object-fit: cover;
 }
+
 
 body {
     font-family: var(--font-body), sans-serif;
@@ -528,22 +529,6 @@ body {
     text-align: center;
     backdrop-filter: blur(10px);
     box-shadow: var(--shadow-xl);
-}
-
-.profile-image {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto var(--space-lg);
-    border-radius: 50%;
-    overflow: hidden;
-    border: 3px solid var(--accent-cyan);
-    box-shadow: var(--shadow-glow-sm);
-}
-
-.profile-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .profile-info h3 {
@@ -1301,18 +1286,6 @@ body {
 .project-content {
     max-width: 800px;
     margin: 0 auto;
-}
-
-.project-image-large {
-    margin-bottom: var(--space-3xl);
-    border-radius: var(--radius-xl);
-    overflow: hidden;
-}
-
-.project-image-large img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
 }
 
 .project-details > div {

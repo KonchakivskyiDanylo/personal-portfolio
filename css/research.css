@@ -1,17 +1,13 @@
 .photo {
     width: 280px;
-    height: 200px;
     border-radius: var(--radius-xl);
-    overflow: hidden;
-    border: var(--borders-4);
     box-shadow: var(--shadow-glow-lg);
-    margin: 0 auto;
-    transition: all var(--transition-base);
     background: var(--bg-glass);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0;
+    margin: 0 auto;
 }
 
 

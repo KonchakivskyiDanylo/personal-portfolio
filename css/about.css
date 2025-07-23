@@ -2,12 +2,8 @@
 .photo {
     width: 280px;
     height: 280px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: var(--borders-4);
     box-shadow: var(--shadow-glow-lg);
     margin: 0 auto;
-    transition: all var(--transition-base);
 }
 
 .about-intro {

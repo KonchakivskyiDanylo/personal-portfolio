@@ -1,4 +1,12 @@
-/* Education Hero Section */
+.photo {
+    width: 350px;
+    height: 220px;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-glow-md);
+    margin: 0 auto;
+}
+
+
 .education-hero {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -564,17 +572,6 @@
 
 .subject-category li:hover {
     color: var(--text-primary);
-}
-
-/* University Photo Styles */
-.photo {
-    width: 350px;
-    height: 220px;
-    border-radius: var(--radius-xl);
-    overflow: hidden;
-    border: 3px solid var(--accent-cyan);
-    box-shadow: var(--shadow-glow-md);
-    margin: 0 auto;
 }
 
 
