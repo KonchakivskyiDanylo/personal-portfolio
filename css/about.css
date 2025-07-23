@@ -5,13 +5,6 @@
     margin: 0 auto;
 }
 
-/* Enhanced Personal Info Grid */
-.personal-info {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-lg);
-}
-
 .info-item {
     display: flex;
     flex-direction: column;

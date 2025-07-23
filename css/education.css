@@ -21,13 +21,6 @@
     padding: 0 var(--space-lg);
 }
 
-/* Academic Stats Grid */
-.academic-stats {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-lg);
-    margin-top: var(--space-xl);
-}
 
 .stat-item {
     display: flex;
