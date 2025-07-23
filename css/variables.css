@@ -18,10 +18,18 @@
     --borders-4: 4px solid var(--color-borders-cyan);
 
     --font-intro: 'Inter', sans-serif;
+    --font-cta: 'Inter', sans-serif;
 
+    --fw-semibold: 600;
     --fw-bold: 700;
 
     --font-style-1: italic;
+
+    --gradient-accent: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-cyan) 100%);
+
+    --radius-2xl: 1.5rem; /* 24px */
+
+    --cta-background:linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
 
 
     /* Color Palette */
@@ -47,7 +55,6 @@
     --fw-light: 300;
     --fw-regular: 400;
     --fw-medium: 500;
-    --fw-semibold: 600;
     --fw-black: 900;
 
     /* Font Sizes */
@@ -80,7 +87,6 @@
     --radius-md: 0.5rem; /* 8px */
     --radius-lg: 0.75rem; /* 12px */
     --radius-xl: 1rem; /* 16px */
-    --radius-2xl: 1.5rem; /* 24px */
     --radius-full: 9999px;
 
     /* Transitions */
@@ -130,7 +136,6 @@
 
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-blue) 100%);
-    --gradient-accent: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-cyan) 100%);
     --gradient-gold: linear-gradient(135deg, var(--accent-gold) 0%, #A78BFA 100%);
     --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
 
