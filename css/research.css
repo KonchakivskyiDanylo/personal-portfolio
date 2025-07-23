@@ -10,27 +10,6 @@
     margin: 0 auto;
 }
 
-
-.research-intro {
-    text-align: left;
-}
-
-.research-intro h1 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    font-size: var(--fs-4xl);
-    color: var(--text-primary);
-    margin-bottom: var(--space-md);
-}
-
-.research-intro .page-subtitle {
-    font-size: var(--fs-xl);
-    color: var(--accent-cyan);
-    margin-bottom: var(--space-2xl);
-    font-style: italic;
-}
-
 /* Research Stats Grid */
 .research-stats {
     display: grid;

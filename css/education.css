@@ -15,26 +15,6 @@
     margin-bottom: var(--space-5xl);
 }
 
-
-.education-intro {
-    text-align: left;
-}
-
-.education-intro h1 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    font-size: var(--fs-4xl);
-    color: var(--text-primary);
-    margin-bottom: var(--space-md);
-}
-
-.education-intro .page-subtitle {
-    font-size: var(--fs-xl);
-    color: var(--accent-cyan);
-    margin-bottom: var(--space-xl);
-}
-
 .education-content-detailed {
     max-width: 900px;
     margin: 0 auto;

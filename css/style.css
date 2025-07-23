@@ -34,6 +34,26 @@
     object-fit: cover;
 }
 
+.intro {
+    text-align: left;
+}
+
+.intro h1 {
+    font-family: var(--font-intro), sans-serif;
+    font-weight: var(--fw-bold);
+    letter-spacing: -0.02em;
+    font-size: var(--fs-4xl);
+    color: var(--text-primary);
+    margin-bottom: var(--space-md);
+}
+
+.intro .page-subtitle {
+    font-style: var(--font-style-1);
+    font-size: var(--fs-xl);
+    color: var(--accent-cyan);
+    margin-bottom: var(--space-xl);
+}
+
 
 body {
     font-family: var(--font-body), sans-serif;

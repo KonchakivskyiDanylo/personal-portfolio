@@ -1,29 +1,8 @@
-/* Enhanced About Hero Section */
 .photo {
     width: 280px;
     height: 280px;
     box-shadow: var(--shadow-glow-lg);
     margin: 0 auto;
-}
-
-.about-intro {
-    text-align: left;
-}
-
-.about-intro h1 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    font-size: var(--fs-4xl);
-    color: var(--text-primary);
-    margin-bottom: var(--space-md);
-}
-
-.about-intro .page-subtitle {
-    font-size: var(--fs-xl);
-    color: var(--accent-cyan);
-    margin-bottom: var(--space-2xl);
-    font-style: italic;
 }
 
 /* Enhanced Personal Info Grid */
