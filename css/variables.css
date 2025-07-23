@@ -1,7 +1,7 @@
-/* CSS Custom Properties (Variables) */
 :root {
     --nav-height: 70px;
     --padding-top-cal: calc(var(--nav-height) + 2rem);
+    --space-lg: 1.5rem; /* 24px */
     --space-xl: 2rem; /* 32px */
     --space-2xl: 2.5rem; /* 40px */
     --space-3xl: 3rem; /* 48px */
@@ -29,7 +29,18 @@
 
     --radius-2xl: 1.5rem; /* 24px */
 
-    --cta-background:linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    --cta-background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+
+    --item-background: linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.08));
+    --item-border: 1px solid var(--shadow-glow);
+    --item-backdrop-filter: blur(10px);
+    --item-transform: translateY(-5px);
+    --item-box-shadow: 0 8px 25px var(--shadow-glow);
+    --item-border-radius: var(--radius-2xl) var(--radius-2xl) 0 0;
+    --item-background-coming-soon: linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    --item-border-coming-soon: 1px dashed var(--border-light);
+
+    --transition-base: 0.3s ease;
 
 
     /* Color Palette */
@@ -74,7 +85,6 @@
     --space-xs: 0.5rem; /* 8px */
     --space-sm: 0.75rem; /* 12px */
     --space-md: 1rem; /* 16px */
-    --space-lg: 1.5rem; /* 24px */
 
     /* Layout */
     --container-max-width: 1200px;
@@ -91,7 +101,6 @@
 
     /* Transitions */
     --transition-fast: 0.15s ease;
-    --transition-base: 0.3s ease;
     --transition-slow: 0.5s ease;
     --transition-bounce: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 

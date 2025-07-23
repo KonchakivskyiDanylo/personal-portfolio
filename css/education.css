@@ -21,17 +21,6 @@
     padding: 0 var(--space-lg);
 }
 
-
-.stat-item {
-    display: flex;
-    flex-direction: column;
-    padding: var(--space-md);
-    background: var(--bg-glass);
-    border: 1px solid var(--border-light);
-    border-radius: var(--radius-lg);
-    backdrop-filter: blur(10px);
-}
-
 .stat-label {
     font-size: var(--fs-sm);
     color: var(--text-secondary);
@@ -269,51 +258,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--space-lg);
-}
-
-.repo-card {
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.08));
-    border: 1px solid var(--shadow-glow);
-    border-radius: var(--radius-xl);
-    padding: var(--space-xl);
-    backdrop-filter: blur(10px);
-    transition: all var(--transition-base);
-    position: relative;
-    overflow: hidden;
-}
-
-.repo-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--accent-cyan);
-    box-shadow: 0 10px 30px var(--shadow-glow);
-}
-
-.repo-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: var(--gradient-accent);
-    opacity: 0;
-    transition: opacity var(--transition-base);
-}
-
-.repo-card:hover::before {
-    opacity: 1;
-}
-
-.repo-card h5 {
-    color: var(--text-primary);
-    margin-bottom: var(--space-md);
-    font-weight: var(--fw-semibold);
-}
-
-.repo-card p {
-    color: var(--text-secondary);
-    line-height: 1.6;
-    margin-bottom: var(--space-md);
 }
 
 .repo-link {

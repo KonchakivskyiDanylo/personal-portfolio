@@ -5,40 +5,6 @@
     margin: 0 auto;
 }
 
-.info-item {
-    display: flex;
-    flex-direction: column;
-    padding: var(--space-lg);
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.08));
-    border: 1px solid var(--shadow-glow);
-    border-radius: var(--radius-xl);
-    backdrop-filter: blur(10px);
-    transition: all var(--transition-base);
-    position: relative;
-    overflow: hidden;
-}
-
-.info-item:hover {
-    transform: translateY(-3px);
-    border-color: var(--accent-cyan);
-    box-shadow: 0 8px 25px var(--shadow-glow);
-}
-
-.info-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: var(--gradient-accent);
-    opacity: 0;
-    transition: opacity var(--transition-base);
-}
-
-.info-item:hover::before {
-    opacity: 1;
-}
 
 .info-label {
     font-size: var(--fs-sm);
@@ -91,6 +57,10 @@
     line-height: 1.8;
     color: var(--text-secondary);
     margin-bottom: var(--space-lg);
+}
+.content-section strong {
+    color: var(--accent-gold);
+    font-weight: var(--fw-bold);
 }
 
 /* Enhanced Highlight Box */
@@ -209,12 +179,6 @@
     margin-left: var(--space-xs);
 }
 
-
-/* Enhanced Typography for Better Readability */
-.content-section strong {
-    color: var(--accent-gold);
-    font-weight: var(--fw-bold);
-}
 
 /* Improved Responsive Design */
 @media (max-width: 768px) {
