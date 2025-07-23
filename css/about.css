@@ -5,28 +5,7 @@
     margin: 0 auto;
 }
 
-
-.info-label {
-    font-size: var(--fs-sm);
-    color: var(--text-secondary);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: var(--space-sm);
-    font-weight: var(--fw-medium);
-}
-
-.info-value {
-    font-size: var(--fs-lg);
-    color: var(--accent-gold);
-    font-weight: var(--fw-bold);
-}
-
 /* Enhanced Content Layout */
-.about-content-detailed {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
 .content-section {
     margin-bottom: var(--space-5xl);
 }

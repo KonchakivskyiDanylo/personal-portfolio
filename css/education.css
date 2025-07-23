@@ -6,6 +6,14 @@
     margin: 0 auto;
 }
 
+.gpa-label {
+    font-size: var(--fs-sm);
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: var(--space-xs);
+}
+
 
 .education-hero {
     display: grid;
@@ -15,26 +23,6 @@
     margin-bottom: var(--space-5xl);
 }
 
-.education-content-detailed {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 var(--space-lg);
-}
-
-.stat-label {
-    font-size: var(--fs-sm);
-    color: var(--text-secondary);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: var(--space-xs);
-}
-
-
-.stat-value {
-    font-size: var(--fs-lg);
-    color: var(--accent-gold);
-    font-weight: var(--fw-bold);
-}
 
 /* University Card */
 .university-card {
@@ -120,14 +108,6 @@
     font-weight: var(--fw-bold);
     color: var(--text-primary);
     line-height: 1;
-}
-
-.gpa-label {
-    font-size: var(--fs-sm);
-    color: var(--text-primary);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-top: var(--space-xs);
 }
 
 /* Mobility Card */
