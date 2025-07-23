@@ -101,7 +101,6 @@ class AnimationController {
 
     // Project card entrance animation
     animateProjectCard(cardElement) {
-        const image = cardElement.querySelector('.project-image img');
         const content = cardElement.querySelector('.project-content');
         const technologies = cardElement.querySelectorAll('.tech-tag');
 
@@ -195,17 +194,14 @@ class AnimationController {
 
     setupCardHover(card) {
         const overlay = card.querySelector('.project-overlay');
-        const image = card.querySelector('.project-image img');
 
         card.addEventListener('mouseenter', () => {
             if (overlay) overlay.style.opacity = '1';
-            if (image) image.style.transform = 'scale(1.1)';
             card.style.transform = 'translateY(-10px) scale(1.02)';
         });
 
         card.addEventListener('mouseleave', () => {
             if (overlay) overlay.style.opacity = '0';
-            if (image) image.style.transform = 'scale(1)';
             card.style.transform = 'translateY(0) scale(1)';
         });
     }

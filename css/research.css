@@ -1,80 +1,22 @@
-/* Research Page Styles for Danylo's Portfolio - Streamlined Version */
-
-/* Research Page Layout */
-.research-page {
-    padding-top: calc(var(--nav-height) + 2rem);
-    min-height: 100vh;
-}
-
-/* Research Hero Section */
-.research-hero {
-    display: grid;
-    grid-template-columns: 280px 1fr;
-    gap: var(--space-5xl);
-    align-items: center;
-    margin-bottom: var(--space-5xl);
-}
-
-.institution-photo {
+.photo {
     width: 280px;
-    height: 200px;
     border-radius: var(--radius-xl);
-    overflow: hidden;
-    border: 4px solid var(--accent-cyan);
     box-shadow: var(--shadow-glow-lg);
-    margin: 0 auto;
-    transition: all var(--transition-base);
     background: var(--bg-glass);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0;
+    margin: 0 auto;
 }
 
-.institution-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.institution-photo:hover {
-    transform: scale(1.05);
-    box-shadow: var(--shadow-glow-lg);
-}
-
-.research-intro {
-    text-align: left;
-}
-
-.research-intro h1 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    font-size: var(--fs-4xl);
-    color: var(--text-primary);
-    margin-bottom: var(--space-md);
-}
-
-.research-intro .page-subtitle {
-    font-size: var(--fs-xl);
-    color: var(--accent-cyan);
-    margin-bottom: var(--space-2xl);
-    font-style: italic;
-}
-
-/* Research Stats Grid */
-.research-stats {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-lg);
-}
 
 .stat-item {
     display: flex;
     flex-direction: column;
     padding: var(--space-lg);
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.08));
-    border: 1px solid rgba(0, 212, 255, 0.2);
+    border: 1px solid var(--shadow-glow);
     border-radius: var(--radius-xl);
     backdrop-filter: blur(10px);
     transition: all var(--transition-base);
@@ -85,7 +27,7 @@
 .stat-item:hover {
     transform: translateY(-3px);
     border-color: var(--accent-cyan);
-    box-shadow: 0 8px 25px rgba(0, 212, 255, 0.2);
+    box-shadow: 0 8px 25px var(--shadow-glow);
 }
 
 .stat-item::before {
@@ -159,7 +101,7 @@
 /* Research Project Card */
 .research-project-card {
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-    border: 1px solid rgba(0, 212, 255, 0.3);
+    border: 1px solid var(--shadow-glow);
     border-radius: var(--radius-2xl);
     padding: var(--space-3xl);
     backdrop-filter: blur(10px);
@@ -171,7 +113,7 @@
 .research-project-card:hover {
     transform: translateY(-5px);
     border-color: var(--accent-cyan);
-    box-shadow: 0 15px 40px rgba(0, 212, 255, 0.2);
+    box-shadow: 0 15px 40px var(--shadow-glow);
 }
 
 .research-project-card::before {
@@ -218,7 +160,7 @@
     font-weight: var(--fw-bold);
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3);
+    box-shadow: 0 4px 12px var(--shadow-glow);
 }
 
 .project-overview {
@@ -250,7 +192,7 @@
     font-size: var(--fs-xl);
     font-weight: var(--fw-semibold);
     margin-bottom: var(--space-lg);
-    border-left: 4px solid var(--accent-cyan);
+    border-left: var(--borders-4);
     padding-left: var(--space-md);
 }
 
@@ -376,7 +318,7 @@
     background: rgba(0, 212, 255, 0.1);
     border-color: var(--accent-cyan);
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 212, 255, 0.2);
+    box-shadow: 0 8px 25px var(--shadow-glow);
 }
 
 .opportunity-item h5 {
@@ -421,93 +363,12 @@
     background: var(--accent-cyan);
     color: var(--primary-dark);
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 212, 255, 0.3);
-}
-
-/* Enhanced CTA Section */
-.cta-section {
-    text-align: center;
-    padding: var(--space-3xl);
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-    border: 1px solid rgba(0, 212, 255, 0.3);
-    border-radius: var(--radius-2xl);
-    backdrop-filter: blur(10px);
-    position: relative;
-    overflow: hidden;
-}
-
-.cta-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: var(--gradient-accent);
-    border-radius: var(--radius-2xl) var(--radius-2xl) 0 0;
-}
-
-.cta-section h2 {
-    margin-bottom: var(--space-lg);
-    font-size: var(--fs-2xl);
-    padding-left: 0;
-}
-
-.cta-section h2::before {
-    display: none;
-}
-
-.cta-section p {
-    margin-bottom: var(--space-2xl);
-    font-size: var(--fs-lg);
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    color: var(--text-secondary);
-    line-height: 1.7;
-}
-
-/* Enhanced CTA Buttons */
-.cta-buttons {
-    display: flex;
-    gap: var(--space-xl);
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: var(--space-2xl);
-}
-
-.cta-buttons .btn {
-    padding: var(--space-lg) var(--space-2xl);
-    font-size: var(--fs-lg);
-    font-weight: var(--fw-semibold);
-    min-width: 220px;
-    position: relative;
-    overflow: hidden;
-    transition: all var(--transition-base);
-}
-
-.cta-buttons .btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-    transition: left 0.6s ease;
-}
-
-.cta-buttons .btn:hover::before {
-    left: 100%;
-}
-
-.cta-buttons .btn:hover {
-    transform: translateY(-3px);
+    box-shadow: 0 8px 25px var(--shadow-glow);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .research-hero {
+    .hero-section {
         grid-template-columns: 1fr;
         gap: var(--space-2xl);
         text-align: center;

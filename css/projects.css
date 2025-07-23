@@ -1,11 +1,5 @@
 /* Projects Page Styles */
 
-/* Main Layout */
-.projects-page {
-    padding-top: calc(var(--nav-height) + 2rem);
-    min-height: 100vh;
-}
-
 .page-header {
     text-align: center;
     margin-bottom: var(--space-5xl);
@@ -59,7 +53,7 @@
 .project-card:hover {
     transform: translateY(-8px);
     border-color: var(--accent-cyan);
-    box-shadow: 0 15px 40px rgba(0, 212, 255, 0.2);
+    box-shadow: 0 15px 40px var(--shadow-glow);
 }
 
 .project-card::before {
@@ -122,7 +116,7 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     white-space: nowrap;
-    box-shadow: 0 2px 8px rgba(0, 212, 255, 0.3);
+    box-shadow: 0 2px 8px var(--shadow-glow);
 }
 
 /* Project Content */
@@ -243,85 +237,6 @@
 
 .project-actions .btn:hover {
     transform: translateY(-2px);
-}
-
-/* CTA Section */
-.cta-section {
-    text-align: center;
-    padding: var(--space-3xl);
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-    border: 1px solid rgba(0, 212, 255, 0.3);
-    border-radius: var(--radius-2xl);
-    backdrop-filter: blur(10px);
-    position: relative;
-    overflow: hidden;
-    margin-top: var(--space-5xl);
-}
-
-.cta-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: var(--gradient-accent);
-    border-radius: var(--radius-2xl) var(--radius-2xl) 0 0;
-}
-
-.cta-section h2 {
-    font-family: 'Inter', sans-serif;
-    font-size: var(--fs-2xl);
-    font-weight: 600;
-    color: var(--text-primary);
-    margin-bottom: var(--space-lg);
-}
-
-.cta-section p {
-    font-family: 'Inter', sans-serif;
-    font-size: var(--fs-lg);
-    color: var(--text-secondary);
-    line-height: 1.7;
-    margin-bottom: var(--space-2xl);
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.cta-buttons {
-    display: flex;
-    gap: var(--space-xl);
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.cta-buttons .btn {
-    font-family: 'Inter', sans-serif;
-    padding: var(--space-lg) var(--space-2xl);
-    font-size: var(--fs-lg);
-    font-weight: 600;
-    min-width: 180px;
-    position: relative;
-    overflow: hidden;
-}
-
-.cta-buttons .btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-    transition: left 0.6s ease;
-}
-
-.cta-buttons .btn:hover::before {
-    left: 100%;
-}
-
-.cta-buttons .btn:hover {
-    transform: translateY(-3px);
 }
 
 /* Responsive Design */
