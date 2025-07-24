@@ -45,6 +45,8 @@
 
     --transition-base: 0.3s ease;
 
+
+    /* Loading Section */
     --loading-bg-color: var(--primary-dark);
     --loading-text-color: var(--accent-cyan);
     --loading-bar-bg: rgba(255, 255, 255, 0.1);
@@ -57,6 +59,42 @@
     --loading-transition: sopacity 0.5s ease;;
     --loading-pulse-duration: 2s;
     --loading-bar-duration: 2s;
+
+    /* Navigation Colors */
+    --nav-bg-color: var(--nav-bg);
+    --nav-border-color: var(--nav-border);
+    --nav-scrolled-bg: rgba(26, 26, 46, 0.98);
+    --nav-logo-primary-color: var(--accent-cyan);
+    --nav-logo-secondary-color: var(--accent-gold);
+    --nav-link-color: var(--text-secondary);
+    --nav-link-hover-color: var(--accent-cyan);
+    --nav-link-active-color: var(--accent-cyan);
+    --nav-link-underline-color: var(--accent-cyan);
+    --nav-hamburger-bar-color: var(--text-primary);
+
+    /* Navigation Typography */
+    --nav-logo-font: var(--font-heading);
+    --nav-logo-weight: var(--fw-bold);
+    --nav-logo-size: var(--fs-xl);
+    --nav-logo-subtext-size: var(--fs-sm);
+    --nav-link-weight: var(--fw-medium);
+    --nav-link-size: var(--fs-sm);
+
+    /* Navigation Spacing & Sizing */
+    --nav-logo-spacing: 2px;
+    --nav-menu-gap: var(--space-lg);
+    --nav-link-padding-vertical: var(--space-xs);
+    --nav-link-padding-horizontal: var(--space-sm);
+    --nav-underline-height: 2px;
+    --nav-underline-offset: -5px;
+    --nav-hamburger-bar-width: 25px;
+    --nav-hamburger-bar-height: 3px;
+    --nav-hamburger-bar-spacing: 3px;
+
+    /* Navigation Effects */
+    --nav-backdrop-blur: 10px;
+    --nav-border-width: 1px;
+
 
 
     /* Color Palette */
