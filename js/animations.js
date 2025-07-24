@@ -134,9 +134,6 @@ class AnimationController {
             const scrollY = window.pageYOffset;
             const windowHeight = window.innerHeight;
 
-            // Parallax mathematical equations
-            this.updateMathEquations(scrollY);
-
             // Navbar background opacity
             this.updateNavbarOpacity(scrollY);
 

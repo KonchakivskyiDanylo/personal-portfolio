@@ -251,37 +251,36 @@
     padding: var(--content-padding);
 }
 
-/* Loading Screen */
 #loading-screen {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--primary-dark);
+    background: var(--loading-bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    transition: opacity 0.5s ease;
+    transition: var(--loading-transition)
 }
 
 .loader {
     text-align: center;
 }
 
-.loader .equation {
-    font-family: var(--font-code);
-    font-size: var(--fs-2xl);
-    color: var(--accent-cyan);
-    margin-bottom: var(--space-lg);
-    animation: pulse 2s infinite;
+.loader .loading-text {
+    font-family: var(--loading-text-font), sans-serif;
+    font-size: var(--loading-text-size);
+    color: var(--loading-text-color);
+    margin-bottom: var(--loading-text-margin);
+    animation: pulse var(--loading-pulse-duration) infinite;
 }
 
 .loading-bar {
-    width: 200px;
-    height: 4px;
-    background: rgba(255, 255, 255, 0.1);
+    width: var(--loading-bar-width);
+    height: var(--loading-bar-height);
+    background: var(--loading-bar-bg);
     border-radius: var(--radius-full);
     overflow: hidden;
     position: relative;
@@ -294,8 +293,8 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: var(--gradient-accent);
-    animation: loading 2s infinite;
+    background: var(--loading-bar-fill);
+    animation: loading var(--loading-bar-duration) infinite;
 }
 
 body {

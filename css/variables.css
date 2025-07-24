@@ -45,6 +45,19 @@
 
     --transition-base: 0.3s ease;
 
+    --loading-bg-color: var(--primary-dark);
+    --loading-text-color: var(--accent-cyan);
+    --loading-bar-bg: rgba(255, 255, 255, 0.1);
+    --loading-bar-fill: var(--gradient-accent);
+    --loading-text-font: var(--font-code);
+    --loading-text-size: var(--fs-2xl);
+    --loading-text-margin: var(--space-lg);
+    --loading-bar-width: 200px;
+    --loading-bar-height: 4px;
+    --loading-transition: sopacity 0.5s ease;;
+    --loading-pulse-duration: 2s;
+    --loading-bar-duration: 2s;
+
 
     /* Color Palette */
     --primary-dark: #242447;
