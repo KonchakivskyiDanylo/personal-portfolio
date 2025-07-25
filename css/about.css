@@ -5,47 +5,9 @@
     margin: 0 auto;
 }
 
-/* Enhanced Content Layout */
-.content-section {
-    margin-bottom: var(--space-5xl);
-}
-
-.content-section h2 {
-    font-family: 'Inter', sans-serif;
-    font-size: var(--fs-2xl);
-    font-weight: 600;
-    color: var(--text-primary);
-    margin-bottom: var(--space-xl);
-    position: relative;
-    padding-left: var(--space-md);
-}
-
-.content-section h2::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 4px;
-    background: var(--gradient-accent);
-    border-radius: var(--radius-full);
-}
-
-.content-section p {
-    font-size: var(--fs-lg);
-    line-height: 1.8;
-    color: var(--text-secondary);
-    margin-bottom: var(--space-lg);
-}
-.content-section strong {
-    color: var(--accent-gold);
-    font-weight: var(--fw-bold);
-}
-
-/* Enhanced Highlight Box */
 .highlight-box {
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-    border: 1px solid var(--shadow-glow);
+    background: var(--highlight-box-backgroud);
+    border: var(--highlight-box-border);
     border-radius: var(--radius-2xl);
     padding: var(--space-2xl);
     margin: var(--space-2xl) 0;
@@ -57,7 +19,7 @@
 .highlight-box:hover {
     transform: translateY(-5px);
     border-color: var(--accent-cyan);
-    box-shadow: 0 10px 30px var(--shadow-glow);
+    box-shadow: var(--highlight-box-shadow);
 }
 
 .highlight-box::before {
@@ -111,10 +73,9 @@
     width: 100%;
 }
 
-/* Enhanced Chess Challenge Box */
 .chess-challenge {
-    background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(255, 215, 0, 0.1));
-    border: 2px solid var(--accent-cyan);
+    background: var(--chess-gradient);
+    border: var(--chess-border);
     border-radius: var(--radius-xl);
     padding: var(--space-2xl);
     text-align: center;
@@ -131,7 +92,7 @@
     left: -50%;
     width: 200%;
     height: 200%;
-    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+    background: var(--chess-gradient-2);
     transform: rotate(45deg);
     transition: transform var(--transition-base);
 }
@@ -143,7 +104,7 @@
 .chess-challenge:hover {
     transform: scale(1.02);
     border-color: var(--accent-gold);
-    box-shadow: 0 10px 30px var(--shadow-glow);
+    box-shadow: var(--chess-shadow);
 }
 
 .chess-challenge p {
@@ -242,33 +203,6 @@
 /* Fix Footer Year */
 .footer-content p {
     color: var(--text-secondary);
-}
-
-/* Add subtle animations for better UX */
-.content-section {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 0.8s ease forwards;
-}
-
-.content-section:nth-child(1) {
-    animation-delay: 0.1s;
-}
-
-.content-section:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
-.content-section:nth-child(3) {
-    animation-delay: 0.3s;
-}
-
-.content-section:nth-child(4) {
-    animation-delay: 0.4s;
-}
-
-.content-section:nth-child(5) {
-    animation-delay: 0.5s;
 }
 
 @keyframes fadeInUp {

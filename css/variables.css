@@ -31,6 +31,8 @@
 
     --cta-background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
 
+    --gradient-1: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+
     --item-background: linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.08));
     --item-border: 1px solid var(--shadow-glow);
     --item-backdrop-filter: blur(10px);
@@ -95,6 +97,16 @@
     --nav-backdrop-blur: 10px;
     --nav-border-width: 1px;
 
+    --content-section-font: var(--font-body);
+
+    --highlight-box-backgroud: var(--gradient-1);
+    --highlight-box-border: 1px solid var(--shadow-glow);
+    --highlight-box-shadow: 0 10px 30px var(--shadow-glow);
+
+    --chess-gradient: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(255, 215, 0, 0.1));
+    --chess-gradient-2: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+    --chess-border: 2px solid var(--accent-cyan);
+    --chess-shadow: 0 10px 30px var(--shadow-glow);
 
 
     /* Color Palette */

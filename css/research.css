@@ -11,36 +11,6 @@
 }
 
 
-.content-section {
-    margin-bottom: var(--space-5xl);
-    padding: var(--space-xl) 0;
-}
-
-.content-section:last-child {
-    margin-bottom: var(--space-3xl);
-}
-
-.content-section h2 {
-    font-family: 'Inter', sans-serif;
-    font-size: var(--fs-2xl);
-    font-weight: 600;
-    color: var(--text-primary);
-    margin-bottom: var(--space-xl);
-    position: relative;
-    padding-left: var(--space-md);
-}
-
-.content-section h2::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 4px;
-    background: var(--gradient-accent);
-    border-radius: var(--radius-full);
-}
-
 /* Research Project Card */
 .research-project-card {
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
@@ -383,33 +353,6 @@
     .research-project-card {
         padding: var(--space-xl);
     }
-}
-
-/* Add subtle animations for better UX */
-.content-section {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 0.8s ease forwards;
-}
-
-.content-section:nth-child(1) {
-    animation-delay: 0.1s;
-}
-
-.content-section:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
-.content-section:nth-child(3) {
-    animation-delay: 0.3s;
-}
-
-.content-section:nth-child(4) {
-    animation-delay: 0.4s;
-}
-
-.content-section:nth-child(5) {
-    animation-delay: 0.5s;
 }
 
 @keyframes fadeInUp {

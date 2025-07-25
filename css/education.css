@@ -472,25 +472,6 @@
 }
 
 
-.content-section {
-    margin-bottom: var(--space-5xl);
-    padding: var(--space-xl) 0;
-}
-
-.content-section:last-child {
-    margin-bottom: var(--space-3xl);
-}
-
-.content-section h2 {
-    font-family: 'Inter', sans-serif;
-    font-size: var(--fs-2xl);
-    font-weight: 600;
-    color: var(--text-primary);
-    margin-bottom: var(--space-2xl);
-    position: relative;
-    padding-left: var(--space-md);
-}
-
 /* Responsive */
 @media (max-width: 768px) {
     .education-hero {
