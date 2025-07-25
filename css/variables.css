@@ -34,7 +34,6 @@
     --gradient-1: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
 
     --item-background: linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.08));
-    --item-border: 1px solid var(--shadow-glow);
     --item-backdrop-filter: blur(10px);
     --item-transform: translateY(-5px);
     --item-box-shadow: 0 8px 25px var(--shadow-glow);
@@ -100,7 +99,6 @@
     --content-section-font: var(--font-body);
 
     --highlight-box-backgroud: var(--gradient-1);
-    --highlight-box-border: 1px solid var(--shadow-glow);
     --highlight-box-shadow: 0 10px 30px var(--shadow-glow);
 
     --chess-gradient: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(255, 215, 0, 0.1));
@@ -115,7 +113,8 @@
     --back-to-top-text-border: var(--border-light);
     --back-to-top-font: 'Inter', sans-serif;
 
-    --footer-border: 1px solid var(--border-light);
+    --default-border: 1px solid var(--border-light);
+
     --footer-font: var(--footer-font);
 
 
@@ -231,7 +230,6 @@
     /* Form Elements */
     --input-height: 3rem;
     --input-padding: 0.75rem 1rem;
-    --input-border: 1px solid var(--border-light);
     --input-border-focus: 2px solid var(--accent-cyan);
     --input-bg: rgba(255, 255, 255, 0.05);
     --input-bg-focus: rgba(255, 255, 255, 0.1);
@@ -247,7 +245,6 @@
     --card-padding: 1.5rem;
     --card-border-radius: var(--radius-xl);
     --card-bg: var(--bg-glass);
-    --card-border: 1px solid var(--border-light);
     --card-shadow: var(--shadow-lg);
 
     /* Navigation */

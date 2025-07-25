@@ -64,7 +64,7 @@
     text-align: center;
     padding: var(--space-3xl);
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-    border: 1px solid var(--shadow-glow);
+    border: var(--default-border);
     border-radius: var(--radius-2xl);
     backdrop-filter: blur(10px);
     position: relative;
@@ -145,7 +145,7 @@
 
 .item {
     background: var(--item-background);
-    border: var(--item-border);
+    border: var(--default-border);
     border-radius: var(--radius-xl);
     backdrop-filter: var(--item-backdrop-filter);
     transition: all var(--transition-base);
@@ -584,7 +584,7 @@ body {
 
 .footer {
     background: var(--primary-dark);
-    border-top: var(--footer-border);
+    border-top: var(--default-border);
     padding: var(--space-2xl) 0;
     margin-top: var(--space-5xl);
 }
@@ -616,7 +616,7 @@ body {
     width: 40px;
     height: 40px;
     background: var(--bg-glass);
-    border: var(--footer-border);
+    border: var(--default-border);
     border-radius: 50%;
     color: var(--text-secondary);
     transition: all var(--transition-base);
@@ -906,7 +906,7 @@ body {
     padding: var(--space-lg);
     background: var(--bg-glass);
     border-radius: var(--radius-lg);
-    border: 1px solid var(--border-light);
+    border: var(--default-border);
 }
 
 .highlight-number {
@@ -935,7 +935,7 @@ body {
 
 .profile-card {
     background: var(--bg-glass);
-    border: 1px solid var(--border-light);
+    border: var(--default-border);
     border-radius: var(--radius-2xl);
     padding: var(--space-xl);
     text-align: center;
@@ -979,7 +979,7 @@ body {
     display: flex;
     gap: var(--space-xl);
     background: var(--bg-glass);
-    border: 1px solid var(--border-light);
+    border: var(--default-border);
     border-radius: var(--radius-xl);
     padding: var(--space-2xl);
     margin-bottom: var(--space-2xl);
@@ -1053,7 +1053,7 @@ body {
 
 .languages-section {
     background: var(--bg-glass);
-    border: 1px solid var(--border-light);
+    border: var(--default-border);
     border-radius: var(--radius-xl);
     padding: var(--space-2xl);
     backdrop-filter: blur(10px);
@@ -1107,7 +1107,7 @@ body {
 
 .research-item {
     background: var(--bg-glass);
-    border: 1px solid var(--border-light);
+    border: var(--default-border);
     border-radius: var(--radius-xl);
     padding: var(--space-2xl);
     backdrop-filter: blur(10px);
@@ -1346,7 +1346,7 @@ body {
 
 .contact-form {
     background: var(--bg-glass);
-    border: 1px solid var(--border-light);
+    border: var(--default-border);
     border-radius: var(--radius-xl);
     padding: var(--space-2xl);
     backdrop-filter: blur(10px);
@@ -1398,7 +1398,7 @@ body {
     right: 20px;
     padding: var(--space-md) var(--space-lg);
     background: var(--bg-glass);
-    border: 1px solid var(--border-light);
+    border: var(--default-border);
     border-radius: var(--radius-lg);
     color: var(--text-primary);
     backdrop-filter: blur(10px);
@@ -1669,7 +1669,7 @@ body {
 .project-links {
     text-align: center;
     padding-top: var(--space-xl);
-    border-top: 1px solid var(--border-light);
+    border-top: var(--default-border)
 }
 
 /* Enhanced Project Detail Styles */
@@ -1694,7 +1694,7 @@ body {
 
 .feature-item {
     background: var(--bg-glass);
-    border: 1px solid var(--border-light);
+    border: var(--default-border);
     border-radius: var(--radius-xl);
     padding: var(--space-xl);
     backdrop-filter: blur(10px);
@@ -1759,7 +1759,7 @@ body {
     padding: var(--space-lg);
     background: var(--bg-glass);
     border-radius: var(--radius-lg);
-    border: 1px solid var(--border-light);
+    border: var(--default-border);
     margin-bottom: var(--space-lg);
 }
 
@@ -1790,7 +1790,7 @@ body {
     text-align: center;
     margin-top: var(--space-3xl);
     padding-top: var(--space-xl);
-    border-top: 1px solid var(--border-light);
+    border-top: var(--default-border)
 }
 
 .section-cta .btn-outline {
@@ -1822,7 +1822,7 @@ body {
     padding: var(--space-lg);
     background: var(--bg-glass);
     border-radius: var(--radius-lg);
-    border: 1px solid var(--border-light);
+    border: var(--default-border);
     margin-bottom: var(--space-lg);
 }
 
@@ -1845,7 +1845,7 @@ body {
     padding: var(--space-lg);
     background: var(--bg-glass);
     border-radius: var(--radius-lg);
-    border: 1px solid var(--border-light);
+    border: var(--default-border);
     min-width: 150px;
 }
 
@@ -1875,7 +1875,7 @@ body {
     padding: var(--space-lg);
     background: var(--bg-glass);
     border-radius: var(--radius-lg);
-    border: 1px solid var(--border-light);
+    border: var(--default-border);
 }
 
 .bot-feature h4 {
@@ -1898,7 +1898,7 @@ body {
 
 .skills-category {
     background: var(--bg-glass);
-    border: 1px solid var(--border-light);
+    border: var(--default-border);
     border-radius: var(--radius-xl);
     padding: var(--space-2xl);
     margin-bottom: var(--space-2xl);

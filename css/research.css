@@ -14,7 +14,7 @@
 /* Research Project Card */
 .research-project-card {
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-    border: 1px solid var(--shadow-glow);
+    border: var(--default-border);
     border-radius: var(--radius-2xl);
     padding: var(--space-3xl);
     backdrop-filter: blur(10px);
@@ -191,7 +191,7 @@
 .collaboration-current,
 .collaboration-opportunities {
     background: var(--bg-glass);
-    border: 1px solid var(--border-light);
+    border: var(--default-border);
     border-radius: var(--radius-xl);
     padding: var(--space-3xl);
     backdrop-filter: blur(10px);
@@ -262,7 +262,7 @@
     gap: var(--space-sm);
     padding: var(--space-md) var(--space-xl);
     background: var(--bg-glass);
-    border: 1px solid var(--border-light);
+    border: var(--default-border);
     border-radius: var(--radius-lg);
     color: var(--accent-cyan);
     text-decoration: none;

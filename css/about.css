@@ -7,7 +7,7 @@
 
 .highlight-box {
     background: var(--highlight-box-backgroud);
-    border: var(--highlight-box-border);
+    border: var(--default-border);
     border-radius: var(--radius-2xl);
     padding: var(--space-2xl);
     margin: var(--space-2xl) 0;
