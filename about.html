@@ -15,25 +15,22 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/animations.css">
 
     <!-- Icons -->
     <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
     <link rel="icon" type="image/png" href="assets/icons/favicon.png">
 </head>
 <body>
-<!-- Loading Screen -->
+
 <div id="loading-screen">
     <div class="loader">
-        <div class="mathematical-loader">
-            <div class="equation">Loading...</div>
-            <div class="loading-bar"></div>
-        </div>
+        <div class="loading-text">Loading...</div>
+        <div class="loading-bar"></div>
     </div>
 </div>
 
-<!-- Navigation -->
 <nav class="navbar" id="navbar">
     <div class="nav-container">
         <div class="nav-logo">
@@ -59,29 +56,28 @@
                     <h1>About Me</h1>
                     <p class="page-subtitle">Beyond the code and equations</p>
                     <div class="info-grid">
-                        <div class="info-item">
-                            <span class="info-label">Age:</span>
-                            <span class="info-value">19</span>
+                        <div class="item">
+                            <span class="item-label">Age:</span>
+                            <span class="item-value">19</span>
                         </div>
-                        <div class="info-item">
-                            <span class="info-label">Birthday:</span>
-                            <span class="info-value">July 3, 2006</span>
+                        <div class="item">
+                            <span class="item-label">Birthday:</span>
+                            <span class="item-value">July 3, 2006</span>
                         </div>
-                        <div class="info-item">
-                            <span class="info-label">Location:</span>
-                            <span class="info-value">Kyiv, Ukraine 🇺🇦</span>
+                        <div class="item">
+                            <span class="item-label">Location:</span>
+                            <span class="item-value">Kyiv, Ukraine 🇺🇦</span>
                         </div>
-                        <div class="info-item">
-                            <span class="info-label">Focus:</span>
-                            <span class="info-value">AI & Applied Mathematics</span>
+                        <div class="item">
+                            <span class="item-label">Focus:</span>
+                            <span class="item-value">AI & Applied Mathematics</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="about-content-detailed">
-            <!-- Personal Journey -->
+        <div class="content-detailed">
             <section class="content-section">
                 <h2>My Journey</h2>
                 <p>Mathematics has been my companion since childhood. During my school years, I participated in
@@ -95,7 +91,6 @@
                     and practical programming drives my current work in AI and machine learning.</p>
             </section>
 
-            <!-- Sports & Team Activities -->
             <section class="content-section">
                 <h2>Sports & Team Spirit</h2>
                 <p>Football has been part of my life since childhood. I played actively in my younger years and remain a
@@ -112,12 +107,8 @@
                         currently in production use and has streamlined our team management significantly.</p>
                     <a href="projects/volleyball.html" class="inline-link">View Project Details →</a>
                 </div>
-
-                <p>Sports have taught me that individual talent means little without effective teamwork, clear
-                    communication.</p>
             </section>
 
-            <!-- Chess -->
             <section class="content-section">
                 <h2>Strategic Thinking</h2>
                 <p>Chess has been another constant in my life, though I don't play as frequently as I used to. At my
@@ -135,7 +126,6 @@
             </section>
 
 
-            <!-- What Drives Me -->
             <section class="content-section">
                 <h2>What Drives Me</h2>
                 <p>I'm always looking for ways to use technology to solve practical problems - whether it's automating
@@ -143,7 +133,6 @@
 
             </section>
 
-            <!-- Call to Action -->
             <section class="content-section cta-section">
                 <h2>Let's Connect</h2>
                 <p>Whether you want to discuss AI research, need help with a mathematical problem, want to collaborate
@@ -159,7 +148,6 @@
     </div>
 </main>
 
-<!-- Footer -->
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
@@ -179,7 +167,6 @@
 
 <script src="js/main.js"></script>
 <script>
-    // Initialize loading screen
     document.addEventListener('DOMContentLoaded', () => {
         const loadingScreen = document.getElementById('loading-screen');
         if (loadingScreen) {

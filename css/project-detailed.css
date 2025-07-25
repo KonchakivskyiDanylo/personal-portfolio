@@ -4,7 +4,7 @@
     margin-bottom: var(--space-4xl);
     border-radius: var(--radius-2xl);
     box-shadow: var(--shadow-2xl);
-    border: 1px solid var(--border-light);
+    border: var(--default-border);
 }
 
 .photo img {
@@ -33,12 +33,6 @@
     color: var(--accent-cyan);
     font-style: italic;
     font-weight: var(--fw-medium);
-}
-
-.project-content {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 var(--space-lg);
 }
 
 
@@ -91,7 +85,7 @@
 
 .requirement-item {
     background: var(--bg-glass);
-    border: 1px solid var(--border-light);
+    border: var(--default-border);
     border-radius: var(--radius-xl);
     padding: var(--space-xl);
     backdrop-filter: blur(10px);
@@ -150,7 +144,7 @@
 
 .solution-item {
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-    border: 1px solid var(--shadow-glow);
+    border: var(--default-border);
     border-radius: var(--radius-xl);
     padding: var(--space-xl);
     backdrop-filter: blur(10px);
@@ -308,7 +302,7 @@
 
 .detail-card {
     background: var(--bg-glass);
-    border: 1px solid var(--border-light);
+    border: var(--default-border);
     border-radius: var(--radius-xl);
     padding: var(--space-xl);
     backdrop-filter: blur(10px);
@@ -363,7 +357,7 @@
 /* Tech Stack */
 .tech-stack {
     background: var(--bg-glass);
-    border: 1px solid var(--border-light);
+    border: var(--default-border);
     border-radius: var(--radius-xl);
     padding: var(--space-xl);
     backdrop-filter: blur(10px);
@@ -441,7 +435,7 @@
 
 .learning-item {
     background: var(--bg-glass);
-    border: 1px solid var(--border-light);
+    border: var(--default-border);
     border-radius: var(--radius-xl);
     padding: var(--space-xl);
     backdrop-filter: blur(10px);
@@ -488,7 +482,7 @@
     justify-content: center;
     flex-wrap: wrap;
     padding-top: var(--space-2xl);
-    border-top: 1px solid var(--border-light);
+    border-top: var(--default-border);
     margin-top: var(--space-xl);
 }
 
@@ -538,7 +532,7 @@
 
 .challenge-item {
     background: var(--bg-glass);
-    border: 1px solid var(--border-light);
+    border: var(--default-border);
     border-radius: var(--radius-xl);
     padding: var(--space-xl);
     backdrop-filter: blur(10px);
@@ -572,7 +566,7 @@
 
 .insight-item {
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-    border: 1px solid var(--shadow-glow);
+    border: var(--default-border);
     border-radius: var(--radius-xl);
     padding: var(--space-xl);
     backdrop-filter: blur(10px);
@@ -607,7 +601,7 @@
 
 .tech-category {
     background: var(--bg-glass);
-    border: 1px solid var(--border-light);
+    border: var(--default-border);
     border-radius: var(--radius-xl);
     padding: var(--space-xl);
     backdrop-filter: blur(10px);

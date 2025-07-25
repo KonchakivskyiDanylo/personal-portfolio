@@ -620,16 +620,16 @@
 }
 
 /* Card Hover Effects */
-.project-card {
+.item {
     transition: all var(--transition-base);
     will-change: transform;
 }
 
-.project-card:hover {
+.item:hover {
     transform: translateY(-10px) scale(1.02);
 }
 
-.project-card::before {
+.item::before {
     content: '';
     position: absolute;
     top: 0;
@@ -643,7 +643,7 @@
     z-index: -1;
 }
 
-.project-card:hover::before {
+.item:hover::before {
     opacity: 0.1;
 }
 

@@ -22,17 +22,14 @@
     <link rel="icon" type="image/png" href="assets/icons/favicon.png">
 </head>
 <body>
-<!-- Loading Screen -->
+
 <div id="loading-screen">
     <div class="loader">
-        <div class="mathematical-loader">
-            <div class="equation">Loading...</div>
-            <div class="loading-bar"></div>
-        </div>
+        <div class="loading-text">Loading...</div>
+        <div class="loading-bar"></div>
     </div>
 </div>
 
-<!-- Navigation -->
 <nav class="navbar" id="navbar">
     <div class="nav-container">
         <div class="nav-logo">
@@ -50,7 +47,7 @@
 <main class="page-layout">
     <div class="container">
         <div class="page-header">
-            <div class="education-hero">
+            <div class="hero-section">
                 <div class="photo">
                     <img src="assets/images/naukma.jpg" alt="National University of Kyiv-Mohyla Academy">
                 </div>
@@ -58,29 +55,28 @@
                     <h1>Education</h1>
                     <p class="page-subtitle">Academic journey and achievements</p>
                     <div class="info-grid">
-                        <div class="stat-item">
-                            <span class="stat-label">Current GPA:</span>
-                            <span class="stat-value">93.3/100</span>
+                        <div class="item">
+                            <span class="item-label">Current GPA:</span>
+                            <span class="item-value">93.3/100</span>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-label">Study Period:</span>
-                            <span class="stat-value">2023 - Present</span>
+                        <div class="item">
+                            <span class="item-label">Study Period:</span>
+                            <span class="item-value">2023 - Present</span>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-label">Degree:</span>
-                            <span class="stat-value">Applied Mathematics</span>
+                        <div class="item">
+                            <span class="item-label">Degree:</span>
+                            <span class="item-value">Applied Mathematics</span>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-label">Focus Areas:</span>
-                            <span class="stat-value">Data Science & Machine Learning</span>
+                        <div class="item">
+                            <span class="item-label">Focus Areas:</span>
+                            <span class="item-value">Data Science & Machine Learning</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="education-content-detailed">
-            <!-- University Education -->
+        <div class="content-detailed">
             <section class="content-section">
                 <h2>University Education</h2>
                 <div class="university-card">
@@ -142,7 +138,7 @@
                     <div class="course-projects">
                         <h4>Course Projects:</h4>
                         <div class="project-repos">
-                            <div class="repo-card">
+                            <div class="item">
                                 <h5>Course Assignments Repository</h5>
                                 <p>Collection of 5 programming assignments covering various C++ concepts including data
                                     structures, algorithms, and object-oriented design patterns.</p>
@@ -153,7 +149,7 @@
                                 </a>
                             </div>
 
-                            <div class="repo-card">
+                            <div class="item">
                                 <h5>Final Course Project</h5>
                                 <p>Comprehensive final project demonstrating advanced C++ programming skills, combining
                                     multiple concepts learned throughout the course.</p>
@@ -175,7 +171,7 @@
                     <div class="course-projects">
                         <h4>University Project:</h4>
                         <div class="project-repos">
-                            <div class="repo-card">
+                            <div class="item">
                                 <h5>Ukrainian Air Alert System</h5>
                                 <p>Group project for NaUKMA coursework - air raid alert prediction system using weather
                                     data, daily news reports, and machine learning algorithms with 80% accuracy.</p>
@@ -323,7 +319,6 @@
     </div>
 </main>
 
-<!-- Footer -->
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
@@ -343,7 +338,6 @@
 
 <script src="js/main.js"></script>
 <script>
-    // Initialize loading screen
     document.addEventListener('DOMContentLoaded', () => {
         const loadingScreen = document.getElementById('loading-screen');
         if (loadingScreen) {

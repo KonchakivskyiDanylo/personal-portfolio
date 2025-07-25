@@ -11,97 +11,10 @@
 }
 
 
-.stat-item {
-    display: flex;
-    flex-direction: column;
-    padding: var(--space-lg);
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.08));
-    border: 1px solid var(--shadow-glow);
-    border-radius: var(--radius-xl);
-    backdrop-filter: blur(10px);
-    transition: all var(--transition-base);
-    position: relative;
-    overflow: hidden;
-}
-
-.stat-item:hover {
-    transform: translateY(-3px);
-    border-color: var(--accent-cyan);
-    box-shadow: 0 8px 25px var(--shadow-glow);
-}
-
-.stat-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: var(--gradient-accent);
-    opacity: 0;
-    transition: opacity var(--transition-base);
-}
-
-.stat-item:hover::before {
-    opacity: 1;
-}
-
-.stat-label {
-    font-size: var(--fs-sm);
-    color: var(--text-secondary);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: var(--space-sm);
-    font-weight: var(--fw-medium);
-}
-
-.stat-value {
-    font-size: var(--fs-lg);
-    color: var(--accent-gold);
-    font-weight: var(--fw-bold);
-}
-
-/* Enhanced Content Layout */
-.research-content-detailed {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 var(--space-lg);
-}
-
-.content-section {
-    margin-bottom: var(--space-5xl);
-    padding: var(--space-xl) 0;
-}
-
-.content-section:last-child {
-    margin-bottom: var(--space-3xl);
-}
-
-.content-section h2 {
-    font-family: 'Inter', sans-serif;
-    font-size: var(--fs-2xl);
-    font-weight: 600;
-    color: var(--text-primary);
-    margin-bottom: var(--space-xl);
-    position: relative;
-    padding-left: var(--space-md);
-}
-
-.content-section h2::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 4px;
-    background: var(--gradient-accent);
-    border-radius: var(--radius-full);
-}
-
 /* Research Project Card */
 .research-project-card {
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-    border: 1px solid var(--shadow-glow);
+    border: var(--default-border);
     border-radius: var(--radius-2xl);
     padding: var(--space-3xl);
     backdrop-filter: blur(10px);
@@ -278,7 +191,7 @@
 .collaboration-current,
 .collaboration-opportunities {
     background: var(--bg-glass);
-    border: 1px solid var(--border-light);
+    border: var(--default-border);
     border-radius: var(--radius-xl);
     padding: var(--space-3xl);
     backdrop-filter: blur(10px);
@@ -349,7 +262,7 @@
     gap: var(--space-sm);
     padding: var(--space-md) var(--space-xl);
     background: var(--bg-glass);
-    border: 1px solid var(--border-light);
+    border: var(--default-border);
     border-radius: var(--radius-lg);
     color: var(--accent-cyan);
     text-decoration: none;
@@ -440,33 +353,6 @@
     .research-project-card {
         padding: var(--space-xl);
     }
-}
-
-/* Add subtle animations for better UX */
-.content-section {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 0.8s ease forwards;
-}
-
-.content-section:nth-child(1) {
-    animation-delay: 0.1s;
-}
-
-.content-section:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
-.content-section:nth-child(3) {
-    animation-delay: 0.3s;
-}
-
-.content-section:nth-child(4) {
-    animation-delay: 0.4s;
-}
-
-.content-section:nth-child(5) {
-    animation-delay: 0.5s;
 }
 
 @keyframes fadeInUp {
