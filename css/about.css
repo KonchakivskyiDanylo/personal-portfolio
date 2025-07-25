@@ -200,11 +200,6 @@
     }
 }
 
-/* Fix Footer Year */
-.footer-content p {
-    color: var(--text-secondary);
-}
-
 @keyframes fadeInUp {
     from {
         opacity: 0;

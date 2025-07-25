@@ -115,6 +115,9 @@
     --back-to-top-text-border: var(--border-light);
     --back-to-top-font: 'Inter', sans-serif;
 
+    --footer-border: 1px solid var(--border-light);
+    --footer-font: var(--footer-font);
+
 
     /* Color Palette */
     --primary-dark: #242447;
