@@ -108,6 +108,13 @@
     --chess-border: 2px solid var(--accent-cyan);
     --chess-shadow: 0 10px 30px var(--shadow-glow);
 
+    --back-to-top-bg: var(--gradient-accent);
+    --back-to-top-color: var(--text-primary);
+    --back-to-top-hover-bg: var(--accent-cyan);
+    --back-to-top-text-bg: var(--bg-glass);
+    --back-to-top-text-border: var(--border-light);
+    --back-to-top-font: 'Inter', sans-serif;
+
 
     /* Color Palette */
     --primary-dark: #242447;
